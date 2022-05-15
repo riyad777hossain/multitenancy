@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Multi Store - Multi tenancy eCommerce Platform </title>
+
+    <!-- favicon -->
+    <link rel=icon href="02_themes_favicon.png" sizes="16x16" type="icon/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Nice Select css  -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Odometer Css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/02_theme.css">
+
+</head>
+
+<body>
+
+    <header class="header-style-01">
+        <!-- Menu area Starts -->
+        <nav class="navbar navbar-area navbar-expand-lg">
+            <div class="container container-one nav-container">
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/02_logo_themes.png" alt="">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="las la-ellipsis-v"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#multi_tenancy_menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="multi_tenancy_menu">
+                    <ul class="navbar-nav">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="01_index_theme.html">Theme One </a></li>
+                                <li><a href="02_index_theme.html">Theme Two</a></li>
+                                <li><a href="03_index_theme.html">Theme Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="02_about.html"> About </a></li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="javascript:void(0)">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="02_shop.html"> Shop </a></li>
+                                <li><a href="02_shop_sidebar.html"> Shop Sidebar </a></li>
+                                <li><a href="02_shop_details.html"> Shop Details </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="02_deal.html"> Product Deal </a></li>
+                                <li><a href="02_discount.html"> Product Discount </a></li>
+                                <li><a href="02_cart.html"> Cart Page </a></li>
+                                <li><a href="02_wishlist.html"> Wishlist Page </a></li>
+                                <li><a href="02_checkout.html"> Checkout Page </a></li>
+                                <li><a href="02_compare.html"> Compare Page </a></li>
+                                <li><a href="02_order_tracking.html"> Order Tracking </a></li>
+                                <li><a href="02_cart_blank.html"> Cart Blank </a></li>
+                                <li><a href="02_wishlist_blank.html"> Wishlist Blank </a></li>
+                                <li><a href="02_404.html"> 404 Page </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="02_blog.html"> Blog </a></li>
+                                <li><a href="02_blog_sidebar.html"> Blog Sidebar </a></li>
+                                <li><a href="02_blog_details.html"> Blog Details </a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="02_contact.html"> Contact </a></li>
+                        <li><a href="javascript:void(0)">Buy Now</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content show-nav-content">
+                    <div class="single-right-content">
+                        <div class="search-suggestions-icon-wrapper">
+                            <div class="search-click-icon">
+                                <i class="las la-search"></i>
+                            </div>
+                            <div class="search-suggetions-show">
+                                <div class="navbar-input searchbar-suggetions">
+                                    <form action="#">
+                                        <div class="search-open-form">
+                                            <input autocomplete="off" class="form--control" id="search_form_input" type="text" placeholder="Search here....">
+                                            <button type="submit"> <i class="las la-search"></i> </button>
+                                            <span class="suggetions-icon-close"> <i class="las la-times"></i> </span>
+                                        </div>
+                                        <div class="search-suggestions" id="search_suggestions_wrap">
+                                            <div class="search-suggestions-inner">
+                                                <h6 class="search-suggestions-title">Product Suggestions</h6>
+                                                <ul class="product-suggestion-list mt-4">
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop1.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection for most popular and best price item in market </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <div class="price-update-through">
+                                                                        <span class="flash-price fw-500"> $330.00 </span>
+                                                                        <span class="flash-old-prices"> $300.00 </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop2.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$269.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop3.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                    <span class="stock-out"> Stock Out </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop4.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop5.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-right-flex">
+                            <div class="track-icon-list">
+                                <div class="single-icon">
+                                    <a class="icon" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 0 </a>
+                                </div>
+                                <div class="single-icon cart-shopping">
+                                    <a class="icon" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 2 </a>
+                                    <div class="addto-cart-contents">
+                                        <div class="single-addto-cart-wrappers">
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart1.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Women Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16 fw-500 color-heading"> $50.00 </span>
+                                                            <span class="old-price"> $60.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-heading fw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart2.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Man Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16 fw-500 color-heading"> $40.00 </span>
+                                                            <span class="old-price"> $50.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-heading fw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cart-total-amount">
+                                            <h6 class="amount-title"> Total Amount: </h6> <span class="fs-18 fw-500 color-light"> $90.00 </span></div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="02_checkout.html" class="cart-btn radius-0 w-100"> CheckOut </a>
+                                        </div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="02_cart.html" class="cart-btn cart-btn-outline radius-0 w-100"> View Cart </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-account">
+                                <a class="accounts" href="javascript:void(0)"> <i class="las la-user"></i> </a>
+                                <ul class="account-list-item">
+                                    <li class="list"> <a href="02_signin.html"> Sign In </a> </li>
+                                    <li class="list"> <a href="02_signup.html"> Sign Up </a> </li>
+                                    <li class="list"> <a href="javascript:void(0)"> Log Out </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu area end -->
+    </header>
+    <div class="search-suggestion-overlay"></div>
+    <!-- Breadcrumb area Starts -->
+    <div class="breadcrumb-area breadcrumb-padding-three">
+        <div class="container container-one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-contents center-text">
+                        <h2 class="breadcrumb-contents-title-two fw-500"> Product Deal </h2>
+                        <ul class="breadcrumb-contents-list mt-2">
+                            <li class="breadcrumb-contents-list-item"> <a href="index.html" class="breadcrumb-contents-list-item-link"> Home </a> </li>
+                            <li class="breadcrumb-contents-list-item"> Deal </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb area end -->
+    <!-- Deal area Starts -->
+    <section class="deal-area padding-bottom-50">
+        <div class="container container-one">
+            <div class="deal-wrapper section-bg-2 center-text">
+                <div class="deal-wrapper-thumb">
+                    <img src="assets/img/deal/deal1.png" alt="">
+                    <img src="assets/img/deal/deal2.png" alt="">
+                </div>
+                <div class="deal-content">
+                    <h2 class="deal-content-title"> Deal of the Week </h2>
+                    <p class="deal-content-para mt-3"> Why does this particular feature stand out to you right now? </p>
+                    <div class="global-timer mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Deal area end -->
+    <!-- Shop area starts -->
+    <div class="responsive-overlay"></div>
+    <section class="shop-area padding-top-50 padding-bottom-50">
+        <div class="container-one">
+            <div class="shop-contents-wrapper">
+                <div class="shop-icon">
+                    <div class="sidebar-icon">
+                        <i class="las la-bars"></i>
+                    </div>
+                </div>
+                <div class="shop-sidebar-content">
+                    <div class="shop-close-main">
+                        <div class="close-bars"> <i class="las la-times"></i> </div>
+                        <div class="single-shop-left">
+                            <div class="single-shop-left-search">
+                                <div class="single-shop-left-search-input">
+                                    <input type="text" class="form--control" placeholder="Search Products">
+                                    <button type="submit"> <i class="las la-search"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Category </h5>
+                                <div class="shop-left-list margin-top-15">
+                                    <ul class="category-lists active-list">
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Food"> Food </span> <span> 10 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Online Course"> Online Course </span> <span> 15 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Hosting"> Hosting </span> <span> 12 </span> </a>
+                                        </li>
+                                        <li class="list active">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Travel"> Travel </span> <span> 18 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Game"> Game </span> <span> 14 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Restaurant"> Restaurant </span> <span> 20 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Fashion"> Fashion </span> <span> 16 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Gadget"> Gadget </span> <span> 22 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Book"> Book </span> <span> 11 </span> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)" class="item"> <span class="ad-values" data-value="Ticket"> Ticket </span> <span> 17 </span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Prices </h5>
+                                <div class="shop-left-list mt-4">
+                                    <form class="price-range-slider" method="post" data-start-min="0" data-start-max="10000" data-min="0" data-max="10000" data-step="5">
+                                        <div class="ui-range-slider"></div>
+                                        <div class="ui-range-slider-footer">
+                                            <div class="ui-range-values">
+                                                <span class="ui-price-title"> Price: </span>
+                                                <div class="ui-range-value-min">$<span class="min_price">100</span>
+                                                    <input type="hidden" value="100">
+                                                </div>-
+                                                <div class="ui-range-value-max">$<span class="max_price">9950</span>
+                                                    <input type="hidden" value="9950">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Size </h5>
+                                <div class="shop-left-list margin-top-15">
+                                    <ul class="size-lists active-list">
+                                        <li class="list">
+                                            <a class="radius-5" href="javascript:void(0)"> XS </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-5" href="javascript:void(0)"> S </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-5" href="javascript:void(0)"> M </a>
+                                        </li>
+                                        <li class="list active">
+                                            <a class="radius-5" href="javascript:void(0)"> L </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-5" href="javascript:void(0)"> XL </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-5" href="javascript:void(0)"> XXL </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Color </h5>
+                                <div class="shop-left-list margin-top-15">
+                                    <ul class="color-lists active-list">
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Black <span> 10 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> White <span> 15 </span> </a> </li>
+                                        <li class="list active"> <a href="javascript:void(0)" class="item"> Red <span> 12 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Green <span> 18 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Purple <span> 14 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Pink <span> 20 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Gray <span> 16 </span> </a> </li>
+                                        <li class="list"> <a href="javascript:void(0)" class="item"> Violet <span> 22 </span> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Rating </h5>
+                                <div class="shop-left-list">
+                                    <ul class="filter-lists active-list mt-3">
+                                        <li class="list">
+                                            <input type="radio" id="radio1" name="size" checked="checked">
+                                            <label for="radio1"> 5 Star Rating </label>
+                                        </li>
+                                        <li class="list">
+                                            <input type="radio" name="size" id="radio2">
+                                            <label for="radio2"> 4 Star Rating </label>
+                                        </li>
+                                        <li class="list">
+                                            <input type="radio" name="size" id="radio3">
+                                            <label for="radio3"> 3 Star Rating </label>
+                                        </li>
+                                        <li class="list">
+                                            <input type="radio" name="size" id="radio4">
+                                            <label for="radio4"> 2 Star Rating </label>
+                                        </li>
+                                        <li class="list">
+                                            <input type="radio" name="size" id="radio5">
+                                            <label for="radio5"> 1 Star Rating </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-shop-left mt-5">
+                            <div class="shop-left-title open">
+                                <h5 class="title title-borders fw-500"> Tags </h5>
+                                <div class="shop-left-list margin-top-15">
+                                    <ul class="tag-lists active-list">
+                                        <li class="list active">
+                                            <a class="radius-0" href="javascript:void(0)"> Fashion </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Gadget </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Watch </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Sunglass </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Camera </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Mobile </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Games </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Chair </a>
+                                        </li>
+                                        <li class="list">
+                                            <a class="radius-0" href="javascript:void(0)"> Headphone </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-contents">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="selectder-filter-contents click-hide-filter">
+                                <span> Selected Filter:</span>
+                                <div class="selected-clear-items">
+                                    <ul class="selected-flex-list" id="_porduct_fitler_item">
+                                        <li class="show-value"> <a class="click-hide" href="javascript:void(0)"> Food </a> </li>
+                                        <li class="show-value"> <a class="click-hide" href="javascript:void(0)"> Travel </a> </li>
+                                    </ul>
+                                    <a class="click-hide-parent" href="javascript:void(0)"> Clear All </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="shop-right">
+                                <span class="showing-results color-light"> Showing 1-12 of  24 results </span>
+                                <div class="single-shops">
+                                    <div class="shop-nice-select" id="nice-select">
+                                        <select>
+                                            <option value="1"> Short By Name </option>
+                                            <option value="2"> By Popularity </option>
+                                            <option value="3"> Short By Date </option>
+                                            <option value="4"> Short By Time </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="single-shops">
+                                    <ul class="shop-flex-icon tabs">
+                                        <li class="shop-icons" data-tab="tab-grid">
+                                            <a href="javascript:void(0)" class="icon"> <i class="las la-bars"></i> </a>
+                                        </li>
+                                        <li class="shop-icons active" data-tab="tab-grid2">
+                                            <a href="javascript:void(0)" class="icon"> <i class="las la-border-all"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-grid2" class="tab-content-item active">
+                        <div class="row mt-4 gy-5">
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop1.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> G-Shock Hand Watch </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(185)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $30.00 </span>
+                                            <span class="flash-old-prices"> $60.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop2.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> T-Shirt Typography </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(134)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $25.00 </span>
+                                            <span class="flash-old-prices"> $50.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop3.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 10% off </span>
+                                            <span class="global-card-thumb-badge-box bg-color-new"> New </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Leather Wallet </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(221)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $18.00 </span>
+                                            <span class="flash-old-prices"> $20.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop4.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Men’s Relax Trouser  </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(185)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $20.00 </span>
+                                            <span class="flash-old-prices"> $40.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop5.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Stylish Popular Cap </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(146)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $20.00 </span>
+                                            <span class="flash-old-prices"> $40.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop6.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Formal Mens Shoe </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(243)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $15.00 </span>
+                                            <span class="flash-old-prices"> $30.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop7.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 10% off </span>
+                                            <span class="global-card-thumb-badge-box bg-color-new"> New </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Formal Suit Blach Ash </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(221)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $35.00 </span>
+                                            <span class="flash-old-prices"> $40.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 ol-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop8.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Men’s T-Shirt </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(321)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $30.00 </span>
+                                            <span class="flash-old-prices"> $60.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop9.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Casual Shirt </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(234)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $10.00 </span>
+                                            <span class="flash-old-prices"> $20.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop10.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Solid T-Shirt </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(187)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $25.00 </span>
+                                            <span class="flash-old-prices"> $50.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop11.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 10% off </span>
+                                            <span class="global-card-thumb-badge-box bg-color-new"> New </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Sylish Cap </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(156)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $27.00 </span>
+                                            <span class="flash-old-prices"> $30.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6 col-sm-6">
+                                <div class="global-card no-shadow radius-0 pb-0">
+                                    <div class="global-card-thumb">
+                                        <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/shop/shop12.jpg" alt=""> </a>
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                        <ul class="global-card-thumb-icons">
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                            </li>
+                                            <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="global-card-contents">
+                                        <div class="global-card-contents-flex">
+                                            <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Smart Sunglass </a> </h5>
+                                            <div class="rating-wrap">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(235)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-update-through mt-3">
+                                            <span class="flash-prices color-two"> $15.00 </span>
+                                            <span class="flash-old-prices"> $30.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-grid" class="tab-content-item">
+                        <div class="row mt-4">
+                            <div class="col-sm-12 mt-4">
+                                <div class="global-flex-card">
+                                    <div class="global-card-thumb global-flex-card-thumb" style="background-image: url(assets/img/shop/shop1.jpg);">
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                    </div>
+                                    <div class="global-flex-card-contents">
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(185)</span></p>
+                                        </div>
+                                        <h5 class="global-flex-card-contents-title fw-500 mt-3"> <a href="javascript:void(0)"> G-Shock Hand Watch </a> </h5>
+                                        <div class="price-update-through mt-4">
+                                            <span class="flash-prices color-two"> $30.00 </span>
+                                            <span class="flash-old-prices"> $60.00 </span>
+                                        </div>
+                                        <p class="global-flex-card-contents-para extra-padding-right mt-4"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="global-flex-card-contents-bottom border-flex-card pt-4 mt-4 pt-lg-5 mt-lg-5">
+                                            <div class="global-flex-card-contents-icon">
+                                                <div class="btn-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Cart">
+                                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-2 radius-0"> Add to Cart </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                    <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <div class="global-flex-card">
+                                    <div class="global-card-thumb global-flex-card-thumb" style="background-image: url(assets/img/shop/shop2.jpg);">
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                    </div>
+                                    <div class="global-flex-card-contents">
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(242)</span></p>
+                                        </div>
+                                        <h5 class="global-flex-card-contents-title fw-500 mt-3"> <a href="javascript:void(0)"> Leather Wallet </a> </h5>
+                                        <div class="price-update-through mt-4">
+                                            <span class="flash-prices color-two"> $10.00 </span>
+                                            <span class="flash-old-prices"> $20.00 </span>
+                                        </div>
+                                        <p class="global-flex-card-contents-para extra-padding-right mt-4"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="global-flex-card-contents-bottom border-flex-card pt-4 mt-4 pt-lg-5 mt-lg-5">
+                                            <div class="global-flex-card-contents-icon">
+                                                <div class="btn-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Cart">
+                                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-2 radius-0"> Add to Cart </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                    <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <div class="global-flex-card">
+                                    <div class="global-card-thumb global-flex-card-thumb" style="background-image: url(assets/img/shop/shop3.jpg);">
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                    </div>
+                                    <div class="global-flex-card-contents">
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(234)</span></p>
+                                        </div>
+                                        <h5 class="global-flex-card-contents-title fw-500 mt-3"> <a href="javascript:void(0)"> T-Shirt Typography </a> </h5>
+                                        <div class="price-update-through mt-4">
+                                            <span class="flash-prices color-two"> $20.00 </span>
+                                            <span class="flash-old-prices"> $40.00 </span>
+                                        </div>
+                                        <p class="global-flex-card-contents-para extra-padding-right mt-4"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="global-flex-card-contents-bottom border-flex-card pt-4 mt-4 pt-lg-5 mt-lg-5">
+                                            <div class="global-flex-card-contents-icon">
+                                                <div class="btn-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Cart">
+                                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-2 radius-0"> Add to Cart </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                    <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <div class="global-flex-card">
+                                    <div class="global-card-thumb global-flex-card-thumb" style="background-image: url(assets/img/shop/shop4.jpg);">
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                    </div>
+                                    <div class="global-flex-card-contents">
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(168)</span></p>
+                                        </div>
+                                        <h5 class="global-flex-card-contents-title fw-500 mt-3"> <a href="javascript:void(0)"> Men’s Relax Trouser </a> </h5>
+                                        <div class="price-update-through mt-4">
+                                            <span class="flash-prices color-two"> $25.00 </span>
+                                            <span class="flash-old-prices"> $50.00 </span>
+                                        </div>
+                                        <p class="global-flex-card-contents-para extra-padding-right mt-4"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="global-flex-card-contents-bottom border-flex-card pt-4 mt-4 pt-lg-5 mt-lg-5">
+                                            <div class="global-flex-card-contents-icon">
+                                                <div class="btn-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Cart">
+                                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-2 radius-0"> Add to Cart </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                    <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <div class="global-flex-card">
+                                    <div class="global-card-thumb global-flex-card-thumb" style="background-image: url(assets/img/shop/shop5.jpg);">
+                                        <div class="global-card-thumb-badge right-side">
+                                            <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                        </div>
+                                    </div>
+                                    <div class="global-flex-card-contents">
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(223)</span></p>
+                                        </div>
+                                        <h5 class="global-flex-card-contents-title fw-500 mt-3"> <a href="javascript:void(0)"> Stylish Cap </a> </h5>
+                                        <div class="price-update-through mt-4">
+                                            <span class="flash-prices color-two"> $15.00 </span>
+                                            <span class="flash-old-prices"> $30.00 </span>
+                                        </div>
+                                        <p class="global-flex-card-contents-para extra-padding-right mt-4"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="global-flex-card-contents-bottom border-flex-card pt-4 mt-4 pt-lg-5 mt-lg-5">
+                                            <div class="global-flex-card-contents-icon">
+                                                <div class="btn-wrapper" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Cart">
+                                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-2 radius-0"> Add to Cart </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                                    <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                                </div>
+                                                <div class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                                    <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop area end -->
+    <!-- Promo area Starts -->
+    <section class="promo-area padding-bottom-50 padding-top-25">
+        <div class="container container-one">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-truck-moving"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Free Shipping </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Order Over $90 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-redo-alt"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Easy Return </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Within 15 Days </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-lock"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Secure payment </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Online Shopping </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-gift"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Best Offer </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Gauranteed </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area style-03 section-bg-3">
+        <div class="footer-top footer-middle-border padding-top-35 padding-bottom-90">
+            <div class="container container-one">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <div class="about_us_widget">
+                                <a href="index.html" class="footer-logo"> <img src="assets/img/02_logo_themes.png" alt="footer logo"></a>
+                            </div>
+                            <div class="footer-inner mt-4">
+                                <div class="footer-contact">
+                                    <span class="contact-item"> <span> <i class="las la-phone"></i> </span> <a href="tel:+6275211504"> +627-521-1504 </a> </span>
+                                    <span class="contact-item"> <span> <i class="las la-envelope"></i> </span> <a href="mailto:info@washeco.co.uk"> info@washeco.co.uk </a> </span>
+                                    <span class="contact-item"> <span> <i class="las la-map-marker-alt"></i> </span> 8702 Jayson, Well Suite 348 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400">Important Link</h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> information </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Shipping </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Payment </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Return </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Blog </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400"> Services </h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> About us </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Contact </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Career </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Terms & Conditions </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Category </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400">Subscribe Updates</h4>
+                            <div class="footer-inner mt-4">
+                                <p class="subscribe-para"> Sign up to our mailing list now! </p>
+                                <form action="#" class="subscribe-form">
+                                    <div class="widget-form-single">
+                                        <input class="form--control" type="text" name="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <button type="submit" class="submit-btn w-100 mt-3"> Subscribe </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-bg">
+            <div class="container container-one">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="footer-widget widget center-text">
+                            <div class="footer-inner">
+                                <div class="footer-socials">
+                                    <ul class="footer-social-list">
+                                        <li class="lists">
+                                            <a class="facebook" href="javascript:void(0)"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="twitter" href="javascript:void(0)"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="instagram" href="javascript:void(0)"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="youtube" href="javascript:void(0)"> <i class="lab la-youtube"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="copyright-contents center-text">
+                            <span> &copy;2022 Copyright All Right Reserved by <a href="javascript:void(0)"> NextCom </a> </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-widget widget">
+                            <div class="footer-inner">
+                                <div class="footer-menu">
+                                    <ul class="payment-list">
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment1.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment2.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment3.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment4.png" alt=""> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"> <i class="las la-angle-up"></i> </span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery Migrate -->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lazyload Js -->
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.js"></script>
+    <!-- Viewport js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- All Plugins js -->
+    <script src="assets/js/wow.js"></script>
+    <!-- Nice Select Js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- COuntdown Js -->
+    <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- Nice Scroll -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/nouislider-8.5.1.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

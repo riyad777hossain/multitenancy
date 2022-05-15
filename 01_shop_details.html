@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Multi Store - Multi tenancy eCommerce Platform </title>
+
+    <!-- favicon -->
+    <link rel=icon href="01_themes_favicon.png" sizes="16x16" type="icon/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Nice Select css  -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Odometer Css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/01_theme.css">
+
+</head>
+
+<body>
+
+    <header class="header-style-01">
+        <!-- Menu area Starts -->
+        <nav class="navbar navbar-area navbar-expand-lg nav-color-two">
+            <div class="container container-one nav-container">
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo_01_theme.png" alt="">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="las la-ellipsis-v"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#multi_tenancy_menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="multi_tenancy_menu">
+                    <ul class="navbar-nav">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="01_index_theme.html">Theme One </a></li>
+                                <li><a href="02_index_theme.html">Theme Two</a></li>
+                                <li><a href="03_index_theme.html">Theme Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="01_about.html"> About </a></li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="javascript:void(0)">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="01_shop.html"> Shop </a></li>
+                                <li><a href="01_shop_sidebar.html"> Shop Sidebar </a></li>
+                                <li><a href="01_shop_details.html"> Shop Details </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="01_deal.html"> Product Deal </a></li>
+                                <li><a href="01_discount.html"> Product Discount </a></li>
+                                <li><a href="01_cart.html"> Cart Page </a></li>
+                                <li><a href="01_wishlist.html"> Wishlist Page </a></li>
+                                <li><a href="01_checkout.html"> Checkout Page </a></li>
+                                <li><a href="01_compare.html"> Compare Page </a></li>
+                                <li><a href="01_order_tracking.html"> Order Tracking </a></li>
+                                <li><a href="01_cart_blank.html"> Cart Blank </a></li>
+                                <li><a href="01_wishlist_blank.html"> Wishlist Blank </a></li>
+                                <li><a href="01_404.html"> 404 Page </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="01_blog.html"> Blog Theme </a></li>
+                                <li><a href="01_blog_sidebar.html"> Blog Theme Sidebar </a></li>
+                                <li><a href="01_blog_details.html"> Blog Theme Details </a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="01_contact.html"> Contact </a></li>
+                        <li><a href="javascript:void(0)">Buy Now</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content show-nav-content">
+                    <div class="single-right-content">
+                        <div class="search-suggestions-icon-wrapper">
+                            <div class="search-click-icon">
+                                <i class="las la-search"></i>
+                            </div>
+                            <div class="search-suggetions-show">
+                                <div class="navbar-input searchbar-suggetions">
+                                    <form action="#">
+                                        <div class="search-open-form">
+                                            <input autocomplete="off" class="form--control" id="search_form_input" type="text" placeholder="Search here....">
+                                            <button type="submit"> <i class="las la-search"></i> </button>
+                                            <span class="suggetions-icon-close"> <i class="las la-times"></i> </span>
+                                        </div>
+                                        <div class="search-suggestions" id="search_suggestions_wrap">
+                                            <div class="search-suggestions-inner">
+                                                <h6 class="search-suggestions-title">Product Suggestions</h6>
+                                                <ul class="product-suggestion-list mt-4">
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop1.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection for most popular and best price item in market </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <div class="price-update-through">
+                                                                        <span class="flash-price fw-500"> $330.00 </span>
+                                                                        <span class="flash-old-prices"> $300.00 </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop2.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$269.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop3.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                    <span class="stock-out"> Stock Out </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop4.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop5.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-right-flex">
+                            <div class="track-icon-list">
+                                <div class="single-icon">
+                                    <a class="icon" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 0 </a>
+                                </div>
+                                <div class="single-icon cart-shopping">
+                                    <a class="icon" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 2 </a>
+                                    <div class="addto-cart-contents">
+                                        <div class="single-addto-cart-wrappers">
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart1.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Women Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16 fw-500 color-heading"> $50.00 </span>
+                                                            <span class="old-price"> $60.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-heading fw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart2.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Man Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16 fw-500 color-heading"> $40.00 </span>
+                                                            <span class="old-price"> $50.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-heading fw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cart-total-amount">
+                                            <h6 class="amount-title"> Total Amount: </h6> <span class="fs-18 fw-500 color-light"> $90.00 </span></div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="01_checkout.html" class="cart-btn radius-0 w-100"> CheckOut </a>
+                                        </div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="01_cart.html" class="cart-btn cart-btn-outline radius-0 w-100"> View Cart </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-account">
+                                <a class="accounts" href="javascript:void(0)"> <i class="las la-user"></i> </a>
+                                <ul class="account-list-item">
+                                    <li class="list"> <a href="01_signin.html"> Sign In </a> </li>
+                                    <li class="list"> <a href="01_signup.html"> Sign Up </a> </li>
+                                    <li class="list"> <a href="javascript:void(0)"> Log Out </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu area end -->
+    </header>
+    <div class="search-suggestion-overlay"></div>
+    <!-- Breadcrumb area Starts -->
+    <div class="breadcrumb-area breadcrumb-padding-two section-bg-2">
+        <div class="container container-one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-contents center-text">
+                        <h2 class="breadcrumb-contents-title-two fw-500"> Shop Details </h2>
+                        <ul class="breadcrumb-contents-list mt-2">
+                            <li class="breadcrumb-contents-list-item"> <a href="index.html" class="breadcrumb-contents-list-item-link"> Home </a> </li>
+                            <li class="breadcrumb-contents-list-item"> Shop Details </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb area end -->
+    <!-- Shop Details area end -->
+    <section class="shop-details-area padding-top-100 padding-bottom-50">
+        <div class="container container-one">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="global-slick-init shop-details-top-slider" data-asNavFor=".shop-details-click-img" data-fade="true" data-infinite="true" data-autoplaySpeed="3000" data-autoplay="true">
+
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="shop-details-thumb-wrapper text-center bg-item-five">
+                            <div class="shop-details-thums">
+                                <img src="assets/img/shop/shop-details2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-details-bottom-slider-area mt-4">
+                        <div class="global-slick-init shop-details-click-img dot-style-one banner-dots dot-absolute slider-inner-margin" data-asNavFor=".shop-details-top-slider" data-focusOnSelect="true" data-infinite="true" data-swipeToslide="true" data-slidesToShow="5" data-dots="false"
+                            data-autoplaySpeed="3000" data-autoplay="true" data-responsive='[{"breakpoint": 1600,"settings": {"slidesToShow": 4}},{"breakpoint": 1400,"settings": {"slidesToShow": 4}},{"breakpoint": 1200,"settings": {"slidesToShow": 3,"arrows": false,"dots": false}},{"breakpoint": 992,"settings": {"slidesToShow": 4,"arrows": false,"dots": false}},{"breakpoint": 768,"settings": {"slidesToShow": 3} },{"breakpoint": 480,"settings": {"slidesToShow": 2} }]'>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details.jpg);">
+                                </div>
+                            </div>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details2.jpg);">
+                                </div>
+                            </div>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details3.jpg);">
+                                </div>
+                            </div>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details4.jpg);">
+                                </div>
+                            </div>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details.jpg);">
+                                </div>
+                            </div>
+                            <div class="shop-small-thumb-wrapper">
+                                <div class="shop-details-thums bg-image details-small-product" style="background-image: url(assets/img/shop/shop-details2.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="single-shop-details-wrapper">
+                        <h2 class="details-title"> Winter Men’s Tshirt Full Sleeve </h2>
+                        <div class="rating-wrap">
+                            <div class="ratings">
+                                <span class="hide-rating"></span>
+                                <span class="show-rating"></span>
+                            </div>
+                            <p> <span class="total-ratings">(167)</span></p>
+                        </div>
+                        <div class="status-details d-flex align-items-center mt-4">
+                            <span class="status-details-title fw-500 me-5"> Status </span>
+                            <a href="javascript:void(0)" class="status-details-title color-stock fw-600"> In Stock </a>
+                        </div>
+                        <div class="price-update-through mt-4">
+                            <h3 class="ff-rubik flash-prices"> $59.00 </h3>
+                            <span class="fs-22 flash-old-prices"> $70.00 </span>
+                        </div>
+                        <a href="javascript:void(0)" class="product-sold-btn mt-3"> 50 Products Sold in last day </a>
+                        <div class="value-input-area">
+                            <div class="single-input-list mt-4">
+                                <span class="input-title fw-500 color-heading"> Size </span>
+                                <ul class="size-lists select-list">
+                                    <li class="list"> S </li>
+                                    <li class="list"> M </li>
+                                    <li class="list active"> L </li>
+                                    <li class="list"> XL </li>
+                                    <li class="list disabled"> XXL </li>
+                                </ul>
+                            </div>
+                            <div class="single-input-list mt-4">
+                                <span class="input-title fw-500 color-heading"> Color </span>
+                                <ul class="size-lists color-list select-list">
+                                    <li class="shop-color-1"> </li>
+                                    <li class="shop-color-2"> </li>
+                                    <li class="shop-color-3"> </li>
+                                    <li class="shop-color-4"> </li>
+                                    <li class="shop-color-5"> </li>
+                                    <li class="shop-color-6"> </li>
+                                    <li class="active shop-color-7"> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quantity-area mt-4">
+                            <div class="quantity-flex">
+                                <span class="quantity-title color-heading fw-500"> Quantity: </span>
+                                <div class="product-quantity">
+                                    <span class="substract"><i class="las la-minus"></i></span><input class="quantity-input" type="number" value="01"><span class="plus"><i class="las la-plus"></i></span>
+                                </div>
+                                <a class="stock-available color-stock" href="javascript:void(0)"> Only! 2 Item left </a>
+                            </div>
+                            <div class="quantity-btn mt-4">
+                                <div class="btn-wrapper">
+                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-heading radius-0 w-100 cart-loading"> Add to Cart </a>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-steam radius-0 w-100 cart-loading"> Buy Now </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wishlist-compare mt-4">
+                            <div class="wishlist-compare-btn">
+                                <a href="javascript:void(0)" class="btn-wishlist btn-details fw-500"> <i class="lar la-heart"></i> Add Wishlist </a>
+                                <a href="compare.html" class="btn-wishlist btn-details fw-500"> <i class="las la-retweet"></i> Add Compare </a>
+                            </div>
+                            <div class="wishlist-share">
+                                <a href="javascript:void(0)" class="share-icon fw-500"> <span class="icon"> <i class="las la-share-alt-square"></i> </span> <span class="share-title"> Share </span> </a>
+                            </div>
+                        </div>
+                        <div class="shop-details-stock shop-border-top pt-4 mt-4">
+                            <ul class="stock-category">
+                                <li class="category-list">
+                                    <span> Category: </span>
+                                    <a class="list-item fw-600" href="javascript:void(0)"> Women </a>
+                                    <a class="list-item fw-600" href="javascript:void(0)"> Man </a>
+                                </li>
+                                <li class="category-list">
+                                    <span> Sub Category: </span>
+                                    <a class="list-item fw-600" href="javascript:void(0)"> Dress </a>
+                                </li>
+                                <li class="category-list">
+                                    <span> Sku: </span>
+                                    <a class="list-item fw-600" href="javascript:void(0)"> T126480 </a>
+                                </li>
+                            </ul>
+
+                            <div class="details-checkout-shop shop-border-top pt-4 mt-4">
+                                <span class="guaranteed-checkout fw-500 color-heading"> Guaranteed Safe Checkout </span>
+                                <ul class="payment-list mt-3">
+                                    <li class="single-list">
+                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/payment1.png" alt=""> </a>
+                                    </li>
+                                    <li class="single-list">
+                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/payment2.png" alt=""> </a>
+                                    </li>
+                                    <li class="single-list">
+                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/payment3.png" alt=""> </a>
+                                    </li>
+                                    <li class="single-list">
+                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/payment4.png" alt=""> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Details area end -->
+    <!-- Shop Details tab area starts -->
+    <section class="tab-details-tab-area padding-top-50 padding-bottom-50">
+        <div class="container container-two">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="details-tab-wrapper">
+                        <ul class="tabs details-tab details-tab-border">
+                            <li class="active" data-tab="description"> Description </li>
+                            <li class="ff-jost" data-tab="reviews"> Reviews </li>
+                            <li class="ff-jost" data-tab="ship_return"> Ship & Return </li>
+                            <li class="ff-jost" data-tab="size_chart"> Size Chart </li>
+                        </ul>
+                        <div id="description" class="tab-content-item active">
+                            <div class="description-tab-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 mt-4">
+                                        <div class="single-description-tab">
+                                            <div class="single-description-tab-content">
+                                                <h4 class="single-description-tab-content-title fw-500"> Product Details: </h4>
+                                                <p class="single-description-tab-content-para mt-4"> The shoes set up the tone and attitude, they change the perception of the way one wears clothes, what we call in France le porté. It is not about length, but the juxtaposition or décalage of the shoes—high
+                                                    or low—with the rest of the proportions. Tristique neque lacinia non interdum. Amet orci, neque, mauris, amet mattis ultrices iaculis eget lacus. Mi placerat sagittis malesuada enim etiam at tellus.
+                                                    Sed et vitae enim nam a lacinia tristique nunc. </p>
+                                            </div>
+                                            <div class="single-description-tab-content">
+                                                <h4 class="single-description-tab-content-title fw-500"> Product Specialities </h4>
+                                                <p class="single-description-tab-content-para mt-4"> The shoes set up the tone and attitude, they change the perception of the way one wears clothes, what we call in France le porté. It is not about length, but the juxtaposition or décalage of the shoes—high
+                                                    or low—with the rest of the proportions. Tristique neque lacinia non interdum. Amet orci, neque, mauris, amet mattis ultrices iaculis eget lacus. Mi placerat sagittis malesuada enim etiam at tellus.
+                                                    Sed et vitae enim nam a lacinia tristique nunc. </p>
+                                                <p class="single-description-tab-content-para mt-4"> Sed donec malesuada elit vitae mollis cras quam. Ut risus euismod etiam vel imperdiet pellentesque. Tristique neque lacinia non interdum. Amet orci, neque, mauris, amet mattis ultrices iaculis eget lacus.
+                                                    Mi placerat sagittis malesuada enim etiam at tellus. Sed et vitae enim nam a lacinia tristique nunc. Ac posuere enim faucibus quis id tellus rutrum sed proin. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4">
+                                        <div class="single-description-tab">
+                                            <div class="single-description-tab-thumb">
+                                                <img class="lazyloads" data-src="assets/img/single-page/description-tab.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="reviews" class="tab-content-item">
+                            <div class="single-details-tab">
+                                <div class="tab-review">
+                                    <div class="about-seller-flex-content">
+                                        <div class="about-seller-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/single-page/seller-small2.jpg" alt=""> </a>
+                                        </div>
+                                        <div class="about-seller-content">
+                                            <h5 class="title fw-500"> <a href="javascript:void(0)"> Riyad Hossain </a> </h5>
+                                            <div class="rating-wrap mt-2">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(167)</span></p>
+                                            </div>
+                                            <p class="about-review-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a egestas leo. Aliquam ut ante lobortis tellus cursus pellentesque. Praesent feugiat tellus quis aliquet </p>
+                                            <span class="review-date"> Aug 25, 2021 </span>
+                                        </div>
+                                    </div>
+                                    <div class="about-seller-flex-content">
+                                        <div class="about-seller-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/single-page/seller-small3.jpg" alt=""> </a>
+                                        </div>
+                                        <div class="about-seller-content">
+                                            <h5 class="title fw-500"> <a href="javascript:void(0)"> John Cena </a> </h5>
+                                            <div class="rating-wrap mt-2">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(167)</span></p>
+                                            </div>
+                                            <p class="about-review-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a egestas leo. Aliquam ut ante lobortis tellus cursus pellentesque. Praesent feugiat tellus quis aliquet </p>
+                                            <span class="review-date"> Aug 23, 2021 </span>
+                                        </div>
+                                    </div>
+                                    <div class="about-seller-flex-content">
+                                        <div class="about-seller-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/single-page/seller-small4.jpg" alt=""> </a>
+                                        </div>
+                                        <div class="about-seller-content">
+                                            <h5 class="title fw-500"> <a href="javascript:void(0)"> Roman Reings </a> </h5>
+                                            <div class="rating-wrap mt-2">
+                                                <div class="ratings">
+                                                    <span class="hide-rating"></span>
+                                                    <span class="show-rating"></span>
+                                                </div>
+                                                <p> <span class="total-ratings">(167)</span></p>
+                                            </div>
+                                            <p class="about-review-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a egestas leo. Aliquam ut ante lobortis tellus cursus pellentesque. Praesent feugiat tellus quis aliquet </p>
+                                            <span class="review-date"> Aug 24, 2021 </span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrapper">
+                                        <a href="javascript:void(0)" class="cmn-btn btn-small cmn-btn-bg-2 radius-0"> See More </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ship_return" class="tab-content-item">
+                            <div class="return-tab-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 mt-4">
+                                        <div class="single-return-tab">
+                                            <div class="single-return-tab-content">
+                                                <h4 class="single-return-tab-content-title fw-500"> Shiping & Returns </h4>
+                                                <p class="single-return-tab-content-para mt-4"> Return & Refund Policies are policies that describe your business's process, policies and requirements for accepting returns. In the following article, we'll discuss Return and Refund Policies for eCommerce
+                                                    stores, whether you're legally required to have one, what to include in one, where you should display it, and more. We've also put together a Sample Return & Refund Policy Template that you can use to
+                                                    help write your own. </p>
+                                            </div>
+                                            <div class="single-return-tab-content mt-4">
+                                                <h4 class="single-return-tab-content-title fw-500"> Returns Policy </h4>
+                                                <p class="single-return-tab-content-para mt-4"> Return & Refund Policies are policies that describe your business's process, policies and requirements for accepting returns. In the following article, we'll discuss Return and Refund Policies for eCommerce
+                                                    stores, whether you're legally required to have one, what to include in one, where you should display it, and more. We've also put together a Sample Return & Refund Policy Template that you can use to
+                                                    help write your own. </p>
+                                                <p class="single-return-tab-content-para mt-4"> Sed donec malesuada elit vitae mollis cras quam. Ut risus euismod etiam vel imperdiet pellentesque. Tristique neque lacinia non interdum. Amet orci, neque, mauris, amet mattis ultrices iaculis eget lacus.
+                                                    Mi placerat sagittis malesuada enim etiam at tellus. Sed et vitae enim nam a lacinia tristique nunc. Ac posuere enim faucibus quis id tellus rutrum sed proin. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4">
+                                        <div class="single-description-tab">
+                                            <div class="single-description-tab-thumb">
+                                                <img class="lazyloads" data-src="assets/img/single-page/description-tab.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="size_chart" class="tab-content-item">
+                            <div class="size-chart-wrapper">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-lg-6 col-md-6 mt-4">
+                                        <div class="single-size-chart">
+                                            <div class="single-size-chart-thumb">
+                                                <img src="assets/img/single-page/compare1.jpg" alt="">
+                                            </div>
+                                            <div class="single-size-chart-contents mt-3">
+                                                <h3 class="single-size-chart-contents-title fw-500"> Example of Size Charts </h3>
+                                                <span class="single-size-chart-contents-subtitle mt-1"> Size Charts </span>
+                                                <div class="size-chart-table mt-4">
+                                                    <div class="table-responsive table-responsive--md">
+                                                        <table class="custom--table">
+                                                            <thead class="head-bg">
+                                                                <tr>
+                                                                    <th> SIZE </th>
+                                                                    <th> CHEST </th>
+                                                                    <th> SHOULDER </th>
+                                                                    <th> LENGTH </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XS </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> S </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> M </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> L </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XL </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XXL </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-lg-6 col-md-6 mt-4">
+                                        <div class="single-size-chart">
+                                            <div class="single-size-chart-thumb">
+                                                <img src="assets/img/single-page/compare2.jpg" alt="">
+                                            </div>
+                                            <div class="single-size-chart-contents mt-3">
+                                                <h3 class="single-size-chart-contents-title fw-500"> Example of Size Charts </h3>
+                                                <span class="single-size-chart-contents-subtitle mt-1"> Size Charts </span>
+                                                <div class="size-chart-table mt-4">
+                                                    <div class="table-responsive table-responsive--md">
+                                                        <table class="custom--table">
+                                                            <thead class="head-bg">
+                                                                <tr>
+                                                                    <th> SIZE </th>
+                                                                    <th> CHEST </th>
+                                                                    <th> SHOULDER </th>
+                                                                    <th> LENGTH </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XS </td>
+                                                                    <td data-label="CHEST"> 94.6 </td>
+                                                                    <td data-label="SHOULDER"> 47.3 </td>
+                                                                    <td data-label="LENGTH"> 68.2 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> S </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> M </td>
+                                                                    <td data-label="CHEST"> 95.8 </td>
+                                                                    <td data-label="SHOULDER"> 47.4 </td>
+                                                                    <td data-label="LENGTH"> 67.7 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> L </td>
+                                                                    <td data-label="CHEST"> 98.4 </td>
+                                                                    <td data-label="SHOULDER"> 46.6 </td>
+                                                                    <td data-label="LENGTH"> 68.1 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XL </td>
+                                                                    <td data-label="CHEST"> 97.2 </td>
+                                                                    <td data-label="SHOULDER"> 47.5 </td>
+                                                                    <td data-label="LENGTH"> 67.9 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XXL </td>
+                                                                    <td data-label="CHEST"> 98.0 </td>
+                                                                    <td data-label="SHOULDER"> 48.1 </td>
+                                                                    <td data-label="LENGTH"> 68.8 </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-lg-6 col-md-6 mt-4">
+                                        <div class="single-size-chart">
+                                            <div class="single-size-chart-thumb">
+                                                <img src="assets/img/single-page/compare3.jpg" alt="">
+                                            </div>
+                                            <div class="single-size-chart-contents mt-3">
+                                                <h3 class="single-size-chart-contents-title fw-500"> Example of Size Charts </h3>
+                                                <span class="single-size-chart-contents-subtitle mt-1"> Size Charts </span>
+                                                <div class="size-chart-table mt-4">
+                                                    <div class="table-responsive table-responsive--md">
+                                                        <table class="custom--table">
+                                                            <thead class="head-bg">
+                                                                <tr>
+                                                                    <th> SIZE </th>
+                                                                    <th> CHEST </th>
+                                                                    <th> SHOULDER </th>
+                                                                    <th> LENGTH </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XS </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> S </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> M </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> L </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XL </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                                <tr class="ff-jost">
+                                                                    <td data-label="SIZE"> XXL </td>
+                                                                    <td data-label="CHEST"> 96.2 </td>
+                                                                    <td data-label="SHOULDER"> 45.1 </td>
+                                                                    <td data-label="LENGTH"> 69.6 </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Details tab area end -->
+    <!-- Featured area starts -->
+    <section class="featured-area padding-top-50 padding-bottom-50">
+        <div class="container-one">
+            <div class="section-title theme-one text-left">
+                <h2 class="title"> Featured Product </h2>
+                <div class="append-featured"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="global-slick-init recent-slider nav-style-one slider-inner-margin" data-appendArrows=".append-featured" data-infinite="true" data-arrows="true" data-dots="false" data-slidesToShow="4" data-swipeToSlide="true" data-autoplay="true" data-autoplaySpeed="2500"
+                        data-prevArrow='<div class="prev-icon"><i class="las la-angle-left"></i></div>' data-nextArrow='<div class="next-icon"><i class="las la-angle-right"></i></div>' data-responsive='[{"breakpoint": 1600,"settings": {"slidesToShow": 3}},{"breakpoint": 1400,"settings": {"slidesToShow": 3}},{"breakpoint": 1200,"settings": {"slidesToShow": 2}},{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 576,"settings": {"slidesToShow": 1} }]'>
+                        <div class="slick-slider-items wow fadeInUp" data-wow-delay=".1s">
+                            <div class="global-card no-shadow radius-0 pb-0">
+                                <div class="global-card-thumb">
+                                    <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/featured/f1.jpg" alt=""> </a>
+                                    <div class="global-card-thumb-badge right-side">
+                                        <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                    </div>
+                                    <ul class="global-card-thumb-icons">
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                            <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="global-card-contents">
+                                    <div class="global-card-contents-flex">
+                                        <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> G-Shock Hand Watch </a> </h5>
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(185)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="price-update-through mt-3">
+                                        <span class="flash-prices color-two"> $30.00 </span>
+                                        <span class="flash-old-prices"> $60.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items wow fadeInDown" data-wow-delay=".2s">
+                            <div class="global-card no-shadow radius-0 pb-0">
+                                <div class="global-card-thumb">
+                                    <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/featured/f2.jpg" alt=""> </a>
+                                    <div class="global-card-thumb-badge right-side">
+                                        <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                    </div>
+                                    <ul class="global-card-thumb-icons">
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                            <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="global-card-contents">
+                                    <div class="global-card-contents-flex">
+                                        <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> T-Shirt Typography </a> </h5>
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(134)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="price-update-through mt-3">
+                                        <span class="flash-prices color-two"> $25.00 </span>
+                                        <span class="flash-old-prices"> $50.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items wow fadeInUp" data-wow-delay=".1s">
+                            <div class="global-card no-shadow radius-0 pb-0">
+                                <div class="global-card-thumb">
+                                    <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/featured/f3.jpg" alt=""> </a>
+                                    <div class="global-card-thumb-badge right-side">
+                                        <span class="global-card-thumb-badge-box bg-color-two"> 10% off </span>
+                                        <span class="global-card-thumb-badge-box bg-color-new"> New </span>
+                                    </div>
+                                    <ul class="global-card-thumb-icons">
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                            <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="global-card-contents">
+                                    <div class="global-card-contents-flex">
+                                        <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Leather Wallet </a> </h5>
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(221)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="price-update-through mt-3">
+                                        <span class="flash-prices color-two"> $18.00 </span>
+                                        <span class="flash-old-prices"> $20.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items wow fadeInDown" data-wow-delay=".2s">
+                            <div class="global-card no-shadow radius-0 pb-0">
+                                <div class="global-card-thumb">
+                                    <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/featured/f4.jpg" alt=""> </a>
+                                    <div class="global-card-thumb-badge right-side">
+                                        <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                    </div>
+                                    <ul class="global-card-thumb-icons">
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                            <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="global-card-contents">
+                                    <div class="global-card-contents-flex">
+                                        <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> Sylish Sunglass </a> </h5>
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(185)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="price-update-through mt-3">
+                                        <span class="flash-prices color-two"> $20.00 </span>
+                                        <span class="flash-old-prices"> $40.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items wow fadeInDown" data-wow-delay=".1s">
+                            <div class="global-card no-shadow radius-0 pb-0">
+                                <div class="global-card-thumb">
+                                    <a href="javascript:void(0)"> <img class="lazyloads" data-src="assets/img/featured/f2.jpg" alt=""> </a>
+                                    <div class="global-card-thumb-badge right-side">
+                                        <span class="global-card-thumb-badge-box bg-color-two"> 50% off </span>
+                                    </div>
+                                    <ul class="global-card-thumb-icons">
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to cart">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Wishlist">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="add to Compare">
+                                            <a class="icon cart-loading" href="javascript:void(0)"> <i class="las la-retweet"></i> </a>
+                                        </li>
+                                        <li class="icon-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Preview">
+                                            <a class="icon popup-modal cart-loading" href="javascript:void(0)"> <i class="lar la-eye"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="global-card-contents">
+                                    <div class="global-card-contents-flex">
+                                        <h5 class="global-card-contents-title"> <a href="javascript:void(0)"> T-Shirt Typography </a> </h5>
+                                        <div class="rating-wrap">
+                                            <div class="ratings">
+                                                <span class="hide-rating"></span>
+                                                <span class="show-rating"></span>
+                                            </div>
+                                            <p> <span class="total-ratings">(134)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="price-update-through mt-3">
+                                        <span class="flash-prices color-two"> $25.00 </span>
+                                        <span class="flash-old-prices"> $50.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured area end -->
+    <!-- footer area start -->
+    <footer class="footer-area style-02 footer-color-two">
+        <div class="footer-top footer-middle-border padding-top-35 padding-bottom-90">
+            <div class="container container-one">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget center-text">
+                            <h4 class="widget-titile fw-500"> Follow us </h4>
+                            <div class="footer-inner mt-4">
+                                <div class="footer-socials">
+                                    <ul class="footer-social-list">
+                                        <li class="lists">
+                                            <a class="facebook" href="javascript:void(0)"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="twitter" href="javascript:void(0)"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="instagram" href="javascript:void(0)"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="youtube" href="javascript:void(0)"> <i class="lab la-youtube"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget center-text">
+                            <div class="about_us_widget">
+                                <a href="index.html" class="footer-logo"> <img src="assets/img/logo_01_theme.png" alt="footer logo"></a>
+                            </div>
+                            <div class="footer-inner mt-4">
+                                <div class="about-us-para"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget center-text">
+                            <h4 class="widget-title fw-500"> Contact Us </h4>
+                            <div class="footer-inner mt-4">
+                                <div class="footer-contact">
+                                    <a href="mailto:info@washeco.co.uk" class="contact-item"> info@washeco.co.uk </a>
+                                    <a href="tel:02083483945" class="contact-item"> 02083483945 </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pb-4 section-bg-2">
+            <div class="container container-one">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mt-4">
+                        <div class="footer-widget widget">
+                            <div class="footer-inner">
+                                <div class="footer-menu">
+                                    <ul class="footer-menu-list">
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> Home </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> About </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> Privacy Policy </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> Terms & Condition </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="footer-widget widget">
+                            <div class="footer-inner">
+                                <div class="footer-menu">
+                                    <ul class="payment-list">
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment1.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment2.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment3.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment4.png" alt=""> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-bg">
+            <div class="container container-three">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="copyright-contents center-text">
+                            <span> &copy;2022 Copyright All Right Reserved by <a href="javascript:void(0)"> NextCom </a> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"> <i class="las la-angle-up"></i> </span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery Migrate -->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lazyload Js -->
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.js"></script>
+    <!-- Viewport js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- All Plugins js -->
+    <script src="assets/js/wow.js"></script>
+    <!-- Nice Select Js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- COuntdown Js -->
+    <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- Nice Scroll -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/nouislider-8.5.1.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

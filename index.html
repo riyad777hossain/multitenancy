@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Multi Store - Multi tenancy eCommerce Platform </title>
+
+    <!-- favicon -->
+    <link rel=icon href="favicon.png" sizes="16x16" type="icon/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Nice Select css  -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Odometer Css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header-style-01">
+        <!-- Menu area Starts -->
+        <nav class="navbar navbar-area nav-absolute navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="las la-ellipsis-v"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#multi_tenancy_menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-inner-all">
+                    <div class="collapse navbar-collapse" id="multi_tenancy_menu">
+                        <ul class="navbar-nav">
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="javascript:void(0)">Home</a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Home 01</a></li>
+                                    <li><a href="01_index_theme.html">Theme One </a></li>
+                                    <li><a href="02_index_theme.html">Theme Two</a></li>
+                                    <li><a href="03_index_theme.html">Theme Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"> About </a></li>
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="javascript:void(0)">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="themes.html"> Amazing Themes </a></li>
+                                    <li><a href="pricing.html"> Pricing Plan </a></li>
+                                    <li><a href="signin.html"> Sign In </a></li>
+                                    <li><a href="signup.html"> Sign Up </a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="javascript:void(0)">Blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html"> Blog </a></li>
+                                    <li><a href="blog_details.html"> Blog Details </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html"> Contact </a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right-content show-nav-content">
+                        <div class="single-right-content">
+                            <div class="btn-wrapper">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-1"> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu area end -->
+    </header>
+    <!-- Banner area Starts -->
+    <div class="banner-area banner-padding section-bg-1">
+        <div class="banner-shpes">
+            <img src="assets/img/banner/banner-wave-s.png" alt="">
+            <img src="assets/img/banner/left-dot-line.png" alt="">
+            <img src="assets/img/banner/right-dot-line.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 mt-4">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h2 class="banner-content-title"> Instant Build your <span class="banner-content-title-shape"> eCommerce </span> Platform </h2>
+                            <p class="banner-content-para mt-4"> Appropriately foster efficient ideas after go forward alignments. Monotonectally. </p>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-bg-1"> Get 14 Days Trial <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="banner-thumb-wrapper">
+                        <div class="banner-radius-shape">
+                            <img src="assets/img/banner/banner-radius-shape.png" alt="">
+                        </div>
+                        <div class="banner-thumb-content-wrapper">
+                            <div class="banner-thumb-content">
+                                <div class="banner-thumb-content-shapes">
+                                    <img src="assets/img/banner/bs1.png" alt="">
+                                    <img src="assets/img/banner/bs2.png" alt="">
+                                    <img src="assets/img/banner/bs3.png" alt="">
+                                </div>
+                                <div class="banner-thumb">
+                                    <img src="assets/img/banner/banner-right.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner area end -->
+    <!-- Featured area Starts -->
+    <section class="featured-area section-bg-1 padding-top-100 padding-bottom-50">
+        <div class="featured-shapes">
+            <img src="assets/img/banner/feature-wave-s.png" alt="">
+        </div>
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> Our <span class="section-shape"> Featured </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="single-feature-wrapper">
+                <div class="row g-0 mt-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f1.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> Custom Domain </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f2.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> Amazing Themes </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f3.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> Unlimited Language </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f4.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> 12 Payment Gateway </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f5.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> Inventory System </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-feature">
+                            <div class="single-feature-icon radius-10">
+                                <img src="assets/img/feature/f6.png" alt="">
+                            </div>
+                            <div class="single-feature-content mt-4">
+                                <h3 class="single-feature-content-title"> <a href="javascript:void(0)"> Mobile Version </a> </h3>
+                                <p class="single-feature-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                                <a href="javascript:void(0)" class="single-feature-content-btn-explore mt-4"> Explore <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured area end -->
+    <!-- Themes area Starts -->
+    <section class="themes-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="theme-shape">
+            <img src="assets/img/theme/theme_shape.png" alt="shape">
+        </div>
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> Amazing <span class="section-shape"> Themes </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="single-themes">
+                        <div class="single-themes-thumb">
+                            <a href="javascript:void(0)"> <img src="assets/img/theme/th1.jpg" alt=""> </a>
+                        </div>
+                        <div class="single-themes-content mt-3">
+                            <div class="single-themes-content-flex">
+                                <h3 class="single-themes-content-title"> <a href="javascript:void(0)"> Fashion Store </a> </h3>
+                                <a href="javascript:void(0)" class="single-themes-content-title-icon"> <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="single-themes">
+                        <div class="single-themes-thumb">
+                            <a href="javascript:void(0)"> <img src="assets/img/theme/th2.jpg" alt=""> </a>
+                        </div>
+                        <div class="single-themes-content mt-3">
+                            <div class="single-themes-content-flex">
+                                <h3 class="single-themes-content-title"> <a href="javascript:void(0)"> Fashion Store </a> </h3>
+                                <a href="javascript:void(0)" class="single-themes-content-title-icon"> <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="single-themes">
+                        <div class="single-themes-thumb">
+                            <a href="javascript:void(0)"> <img src="assets/img/theme/th3.jpg" alt=""> </a>
+                        </div>
+                        <div class="single-themes-content mt-3">
+                            <div class="single-themes-content-flex">
+                                <h3 class="single-themes-content-title"> <a href="javascript:void(0)"> Fashion Store </a> </h3>
+                                <a href="javascript:void(0)" class="single-themes-content-title-icon"> <i class="las la-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Themes area end -->
+    <!-- Works area starts -->
+    <section class="works-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> How it <span class="section-shape"> Works? </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="works-wrapper">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-works center-text bg-white">
+                            <div class="single-works-content">
+                                <span class="single-works-content-number"> 1 </span>
+                                <h3 class="single-works-content-title mt-3"> Register & Setup </h3>
+                                <p class="single-works-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-works center-text bg-white">
+                            <div class="single-works-content">
+                                <span class="single-works-content-number"> 2 </span>
+                                <h3 class="single-works-content-title mt-3"> Upload Products </h3>
+                                <p class="single-works-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-works center-text bg-white">
+                            <div class="single-works-content">
+                                <span class="single-works-content-number"> 3 </span>
+                                <h3 class="single-works-content-title mt-3"> Get Sales </h3>
+                                <p class="single-works-content-para mt-3"> Free local dispatch for our gold and platinum members Professional advise. Dispatch for our gold and platinum members Professional advise. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Works area end -->
+    <!-- Counter area starts -->
+    <section class="counter-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="counter-wrapper counter-wrapper-border bg-white">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter area end -->
+    <!-- Choose area starts -->
+    <section class="choose-area section-bg-1 padding-top-25 padding-bottom-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-5 mt-4">
+                    <div class="choose-thumb-content">
+                        <div class="thumb">
+                            <img src="assets/img/choose/choose.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-9 mt-4">
+                    <div class="choose-wrapper">
+                        <div class="section-title text-left">
+                            <h2 class="title"> Why <span class="section-shape"> Choose us? </span> </h2>
+                            <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-12">
+                                <div class="single-choose bg-white radius-10 mt-4">
+                                    <div class="single-choose-flex">
+                                        <div class="single-choose-icon radius-10">
+                                            <img src="assets/img/choose/ci1.png" alt="">
+                                        </div>
+                                        <div class="single-choose-content">
+                                            <h3 class="single-choose-content-title"> <a href="javascript:void(0)"> Start Online Business </a> </h3>
+                                            <p class="single-choose-content-para"> Free local dispatch for our gold and platinum members, Professional advise Dispatch for our gold and platinum members. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-choose bg-white radius-10 mt-4">
+                                    <div class="single-choose-flex">
+                                        <div class="single-choose-icon radius-10">
+                                            <img src="assets/img/choose/ci2.png" alt="">
+                                        </div>
+                                        <div class="single-choose-content">
+                                            <h3 class="single-choose-content-title"> <a href="javascript:void(0)"> Move your Business Online </a> </h3>
+                                            <p class="single-choose-content-para"> Free local dispatch for our gold and platinum members, Professional advise Dispatch for our gold and platinum members. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-choose bg-white radius-10 mt-4">
+                                    <div class="single-choose-flex">
+                                        <div class="single-choose-icon radius-10">
+                                            <img src="assets/img/choose/ci3.png" alt="">
+                                        </div>
+                                        <div class="single-choose-content">
+                                            <h3 class="single-choose-content-title"> <a href="javascript:void(0)"> Switch to our Platform </a> </h3>
+                                            <p class="single-choose-content-para"> Free local dispatch for our gold and platinum members, Professional advise Dispatch for our gold and platinum members. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choose area end -->
+    <!-- Pricing area starts -->
+    <section class="pricing-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> <span class="section-shape"> Pricing </span> Plan </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6 mt-4">
+                    <div class="pricing-tab-list center-text">
+                        <ul class="tabs price-tab radius-10">
+                            <li data-tab="tab-month" class="price-tab-list"> Monthly </li>
+                            <li data-tab="tab-year" class="price-tab-list active"> Yearly </li>
+                            <li data-tab="tab-lifetime" class="price-tab-list"> Lifetime </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-item" id="tab-month">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Small Business </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Starter </span>
+                                <h3 class="single-price-top-title mt-4"> $20 <sub>/Mn</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price active radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Best Offer </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Medium </span>
+                                <h3 class="single-price-top-title mt-4"> $50 <sub>/Yr</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Special </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Premium </span>
+                                <h3 class="single-price-top-title mt-4"> $150 <sub>/Lft</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-item active" id="tab-year">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Small Business </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Starter </span>
+                                <h3 class="single-price-top-title mt-4"> $20 <sub>/Mn</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price active radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Best Offer </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Medium </span>
+                                <h3 class="single-price-top-title mt-4"> $50 <sub>/Yr</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Special </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Premium </span>
+                                <h3 class="single-price-top-title mt-4"> $150 <sub>/Lft</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-item" id="tab-lifetime">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Small Business </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Starter </span>
+                                <h3 class="single-price-top-title mt-4"> $20 <sub>/Mn</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price active radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Best Offer </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Medium </span>
+                                <h3 class="single-price-top-title mt-4"> $50 <sub>/Yr</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="single-price radius-10">
+                            <span class="single-price-sub-title mb-5 radius-5"> Special </span>
+                            <div class="single-price-top center-text">
+                                <span class="single-price-top-plan"> Premium </span>
+                                <h3 class="single-price-top-title mt-4"> $150 <sub>/Lft</sub> </h3>
+                            </div>
+                            <ul class="single-price-list mt-4">
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Everyday </strong> Fashion reviews </span> </li>
+                                <li class="single-price-list-item"> <span class="check-icon"> <i class="las la-check"></i> </span> <span> <strong> Unlimited </strong> Sale Compilation </span> </li>
+                                <li class="single-price-list-item"> <span class="cross-icon"> <i class="las la-times"></i> </span> <span> Up to 3 Person Consults </span> </li>
+                            </ul>
+                            <div class="btn-wrapper mt-4 mt-lg-5">
+                                <a href="javascript:void(0)" class="cmn-btn cmn-btn-outline-one color-one w-100"> Start Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing area end -->
+    <!-- Feedback area starts -->
+    <section class="feedback-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> Customer <span class="section-shape"> Feedback </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 mt-4">
+                    <div class="global-slick-init slider-inner-margin dot-style-one" data-infinite="true" data-arrows="false" data-dots="true" data-slidesToShow="3" data-swipeToSlide="true" data-autoplay="true" data-autoplaySpeed="2500" data-responsive='[{"breakpoint": 1600,"settings": {"slidesToShow": 3}},{"breakpoint": 1200,"settings": {"slidesToShow": 2}},{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 768, "settings": {"slidesToShow": 1}},{"breakpoint": 576, "settings": {"slidesToShow": 1}}]'>
+                        <div class="slick-slider-item">
+                            <div class="single-feedback bg-white radius-10">
+                                <div class="single-feedback-content">
+                                    <span class="single-feedback-content-icon"> <i class="las la-quote-left"></i> </span>
+                                    <p class="single-feedback-content-para"> I was able to learn a large amount in a short amount of time. The practical nature helped me understand what we were trying to do, and how to achieve it. </p>
+                                </div>
+                                <div class="single-feedback-author author-border">
+                                    <div class="single-feedback-author-flex">
+                                        <div class="single-feedback-author-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/feedback/author1.jpg" alt="img"> </a>
+                                        </div>
+                                        <div class="single-feedback-author-content">
+                                            <h3 class="single-feedback-author-content-title"> <a href="javascript:void(0)"> Cameron Williamson </a> </h3>
+                                            <span class="single-feedback-author-content-subtitle"> Starbucks </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-item">
+                            <div class="single-feedback bg-white radius-10">
+                                <div class="single-feedback-content">
+                                    <span class="single-feedback-content-icon"> <i class="las la-quote-left"></i> </span>
+                                    <p class="single-feedback-content-para"> I was able to learn a large amount in a short amount of time. The practical nature helped me understand what we were trying to do, and how to achieve it. </p>
+                                </div>
+                                <div class="single-feedback-author author-border">
+                                    <div class="single-feedback-author-flex">
+                                        <div class="single-feedback-author-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/feedback/author2.jpg" alt="img"> </a>
+                                        </div>
+                                        <div class="single-feedback-author-content">
+                                            <h3 class="single-feedback-author-content-title"> <a href="javascript:void(0)"> Jacob Jones </a> </h3>
+                                            <span class="single-feedback-author-content-subtitle"> eBay </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-item">
+                            <div class="single-feedback bg-white radius-10">
+                                <div class="single-feedback-content">
+                                    <span class="single-feedback-content-icon"> <i class="las la-quote-left"></i> </span>
+                                    <p class="single-feedback-content-para"> I was able to learn a large amount in a short amount of time. The practical nature helped me understand what we were trying to do, and how to achieve it. </p>
+                                </div>
+                                <div class="single-feedback-author author-border">
+                                    <div class="single-feedback-author-flex">
+                                        <div class="single-feedback-author-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/feedback/author3.jpg" alt="img"> </a>
+                                        </div>
+                                        <div class="single-feedback-author-content">
+                                            <h3 class="single-feedback-author-content-title"> <a href="javascript:void(0)"> Albert Flores </a> </h3>
+                                            <span class="single-feedback-author-content-subtitle"> Gillette </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-item">
+                            <div class="single-feedback bg-white radius-10">
+                                <div class="single-feedback-content">
+                                    <span class="single-feedback-content-icon"> <i class="las la-quote-left"></i> </span>
+                                    <p class="single-feedback-content-para"> I was able to learn a large amount in a short amount of time. The practical nature helped me understand what we were trying to do, and how to achieve it. </p>
+                                </div>
+                                <div class="single-feedback-author author-border">
+                                    <div class="single-feedback-author-flex">
+                                        <div class="single-feedback-author-thumb">
+                                            <a href="javascript:void(0)"> <img src="assets/img/feedback/author2.jpg" alt="img"> </a>
+                                        </div>
+                                        <div class="single-feedback-author-content">
+                                            <h3 class="single-feedback-author-content-title"> <a href="javascript:void(0)"> Jacob Jones </a> </h3>
+                                            <span class="single-feedback-author-content-subtitle"> eBay </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback area end -->
+    <!-- Blog area starts -->
+    <section class="blog-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> Blog <span class="section-shape"> Updates </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 mt-4">
+                    <div class="global-slick-init slider-inner-margin dot-style-one" data-infinite="true" data-arrows="false" data-dots="true" data-slidesToShow="3" data-swipeToSlide="true" data-autoplay="true" data-autoplaySpeed="2500" data-responsive='[{"breakpoint": 1600,"settings": {"slidesToShow": 3}},{"breakpoint": 1200,"settings": {"slidesToShow": 2}},{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 768, "settings": {"slidesToShow": 1}},{"breakpoint": 576, "settings": {"slidesToShow": 1}}]'>
+                        <div class="slick-slider-item">
+                            <div class="single-blog">
+                                <div class="single-blog-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/blog/blog1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-blog-contents mt-4">
+                                    <h2 class="single-blog-contents-title"> <a href="javascript:void(0)"> Traditional training since the sixteenth century </a> </h2>
+                                    <div class="single-blog-contents-bottom mt-4">
+                                        <a href="javascript:void(0)" class="reading-btn"> Keep Reading <i class="las la-arrow-right"></i> </a>
+                                        <span class="min-reading"> 12 Mar 2022 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-item">
+                            <div class="single-blog">
+                                <div class="single-blog-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/blog/blog2.jpg" alt=""></a>
+                                </div>
+                                <div class="single-blog-contents mt-4">
+                                    <h2 class="single-blog-contents-title"> <a href="javascript:void(0)"> Traditional training since the sixteenth century </a> </h2>
+                                    <div class="single-blog-contents-bottom mt-4">
+                                        <a href="javascript:void(0)" class="reading-btn"> Keep Reading <i class="las la-arrow-right"></i> </a>
+                                        <span class="min-reading"> 14 Mar 2022 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-item">
+                            <div class="single-blog">
+                                <div class="single-blog-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/blog/blog3.jpg" alt=""> </a>
+                                </div>
+                                <div class="single-blog-contents mt-4">
+                                    <h2 class="single-blog-contents-title"> <a href="javascript:void(0)"> Traditional training since the sixteenth century </a> </h2>
+                                    <div class="single-blog-contents-bottom mt-4">
+                                        <a href="javascript:void(0)" class="reading-btn"> Keep Reading <i class="las la-arrow-right"></i> </a>
+                                        <span class="min-reading"> 15 Mar 2022 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items">
+                            <div class="single-blog">
+                                <div class="single-blog-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/blog/blog2.jpg" alt=""></a>
+                                </div>
+                                <div class="single-blog-contents mt-4">
+                                    <h2 class="single-blog-contents-title"> <a href="javascript:void(0)"> Traditional training since the sixteenth century </a> </h2>
+                                    <div class="single-blog-contents-bottom mt-4">
+                                        <a href="javascript:void(0)" class="reading-btn"> Keep Reading <i class="las la-arrow-right"></i> </a>
+                                        <span class="min-reading"> 18 Mar 2022 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog area end -->
+    <!-- Question area starts -->
+    <section class="question-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title"> Frequently Asked <span class="section-shape"> Question </span> </h2>
+                <p class="section-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="row align-items-center justify-content-center mt-4">
+                <div class="col-xl-5 mt-4">
+                    <div class="question-thumb-wrapper">
+                        <div class="thumb center-text">
+                            <img src="assets/img/question/question.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-9 mt-4">
+                    <div class="faq-wrapper">
+                        <div class="faq-contents">
+                            <div class="faq-item wow fadeInLeft" data-wow-delay=".1s">
+                                <div class="faq-title">
+                                    What is the membership fee for joining Oxo?
+                                </div>
+                                <div class="faq-panel">
+                                    <p class="faq-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ipsum purus erat aliquam fermentum, tincidunt. Massa id faucibus orci nunc sed turpis nibh neque. Ut tellus curabitur arcu, mollis malesuada arcu. </p>
+                                </div>
+                            </div>
+                            <div class="faq-item active open wow fadeInLeft" data-wow-delay=".2s">
+                                <div class="faq-title">
+                                    What is the membership fee for joining Oxo?
+                                </div>
+                                <div class="faq-panel">
+                                    <p class="faq-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ipsum purus erat aliquam fermentum, tincidunt. Massa id faucibus orci nunc sed turpis nibh neque. Ut tellus curabitur arcu, mollis malesuada arcu. </p>
+                                </div>
+                            </div>
+                            <div class="faq-item wow fadeInLeft" data-wow-delay=".3s">
+                                <div class="faq-title">
+                                    What is the membership fee for joining Oxo?
+                                </div>
+                                <div class="faq-panel">
+                                    <p class="faq-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ipsum purus erat aliquam fermentum, tincidunt. Massa id faucibus orci nunc sed turpis nibh neque. Ut tellus curabitur arcu, mollis malesuada arcu. </p>
+                                </div>
+                            </div>
+                            <div class="faq-item wow fadeInLeft" data-wow-delay=".1s">
+                                <div class="faq-title">
+                                    What is the membership fee for joining Oxo?
+                                </div>
+                                <div class="faq-panel">
+                                    <p class="faq-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ipsum purus erat aliquam fermentum, tincidunt. Massa id faucibus orci nunc sed turpis nibh neque. Ut tellus curabitur arcu, mollis malesuada arcu. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Question area end -->
+    <!-- GetUpdate area starts -->
+    <section class="getupdate-area section-bg-1 padding-top-50 padding-bottom-50">
+        <div class="container">
+            <div class="getupdate-wrapper getupdate-bg radius-20">
+                <div class="getupdate-shape">
+                    <img src="assets/img/getupdate-line.png" alt="">
+                </div>
+                <div class="getupdate-content center-text">
+                    <h2 class="getupdate-content-title"> Get Updates as soon as they happen. </h2>
+                    <p class="getupdate-content-para mt-4"> Signup now for our newsletter and app launch. </p>
+                    <form action="#" class="getupdate-content-form mt-4">
+                        <div class="getupdate-content-form-single radius-5">
+                            <input type="text" class="getupdate-content-form-single-input radius-5" placeholder="Your Email Here">
+                            <button> Sign Up </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GetUpdate area end -->
+    <!-- footer area start -->
+    <footer class="footer-area section-bg-1">
+        <div class="footer-top footer-middle-border padding-top-35 padding-bottom-70">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget ">
+                            <div class="about_us_widget">
+                                <a href="index.html" class="footer-logo"> <img src="assets/img/logo.png" alt="footer logo"></a>
+                            </div>
+                            <div class="footer-inner mt-4">
+                                <div class="footer-contact">
+                                    <a href="mailto:info@washeco.co.uk" class="contact-item"> info@washeco.co.uk </a>
+                                    <a href="tel:02083483945" class="contact-item"> 02083483945 </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title">About Us</h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Work Portfolio </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> About us </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Team </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Pricing </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Blog </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title"> Services </h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Web Design </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Ui/Ux Design </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> App Development </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Game Development </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Marketing </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title">Our Address</h4>
+                            <div class="footer-inner mt-4">
+                                <p class="subscribe-para"> Unit 4, The Courtyard, Lynton Road, Crouch End N8 8SL </p>
+                                <div class="footer-socials margin-top-40">
+                                    <ul class="footer-social-list">
+                                        <li class="lists">
+                                            <a class="facebook" href="javascript:void(0)"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="twitter" href="javascript:void(0)"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="instagram" href="javascript:void(0)"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="youtube" href="javascript:void(0)"> <i class="lab la-youtube"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-bg">
+            <div class="container container-three">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="copyright-contents center-text">
+                            <span> &copy;2022 Copyright All Right Reserved by <a href="javascript:void(0)"> Store </a> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"> <i class="las la-angle-up"></i> </span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery Migrate -->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lazyload Js -->
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.js"></script>
+    <!-- Viewport js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- All Plugins js -->
+    <script src="assets/js/wow.js"></script>
+    <!-- Nice Select Js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- COuntdown Js -->
+    <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- Nice Scroll -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/nouislider-8.5.1.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

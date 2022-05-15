@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Multi Store - Multi tenancy eCommerce Platform </title>
+
+    <!-- favicon -->
+    <link rel=icon href="03_themes_favicon.png" sizes="16x16" type="icon/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- slick carousel  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Nice Select css  -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Odometer Css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/03_theme.css">
+
+</head>
+
+<body>
+
+    <header class="header-style-01">
+        <!-- Menu area Starts -->
+        <nav class="navbar navbar-area navbar-expand-lg">
+            <div class="container container-one nav-container">
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/03_logo_themes.png" alt="">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="click-nav-right-icon">
+                        <i class="las la-ellipsis-v"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#multi_tenancy_menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="multi_tenancy_menu">
+                    <ul class="navbar-nav">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="01_index_theme.html">Theme One </a></li>
+                                <li><a href="02_index_theme.html">Theme Two</a></li>
+                                <li><a href="03_index_theme.html">Theme Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="03_about.html"> About </a></li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="javascript:void(0)">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="03_shop.html"> Shop </a></li>
+                                <li><a href="03_shop_sidebar.html"> Shop Sidebar </a></li>
+                                <li><a href="03_shop_details.html"> Shop Details </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="03_deal.html"> Product Deal </a></li>
+                                <li><a href="03_discount.html"> Product Discount </a></li>
+                                <li><a href="03_cart.html"> Cart Page </a></li>
+                                <li><a href="03_wishlist.html"> Wishlist Page </a></li>
+                                <li><a href="03_checkout.html"> Checkout Page </a></li>
+                                <li><a href="03_order_tracking.html"> Order Tracking </a></li>
+                                <li><a href="03_compare.html"> Compare Page </a></li>
+                                <li><a href="03_cart_blank.html"> Cart Blank </a></li>
+                                <li><a href="03_wishlist_blank.html"> Wishlist Blank </a></li>
+                                <li><a href="03_404.html"> 404 Page </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="03_blog.html"> Blog </a></li>
+                                <li><a href="03_blog_sidebar.html"> Blog Sidebar </a></li>
+                                <li><a href="03_blog_details.html"> Blog Details </a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="03_contact.html"> Contact </a></li>
+                        <li><a href="javascript:void(0)">Buy Now</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right-content show-nav-content">
+                    <div class="single-right-content">
+                        <div class="search-suggestions-icon-wrapper">
+                            <div class="search-click-icon">
+                                <i class="las la-search"></i>
+                            </div>
+                            <div class="search-suggetions-show">
+                                <div class="navbar-input searchbar-suggetions">
+                                    <form action="#">
+                                        <div class="search-open-form">
+                                            <input autocomplete="off" class="form--control" id="search_form_input" type="text" placeholder="Search here....">
+                                            <button type="submit"> <i class="las la-search"></i> </button>
+                                            <span class="suggetions-icon-close"> <i class="las la-times"></i> </span>
+                                        </div>
+                                        <div class="search-suggestions" id="search_suggestions_wrap">
+                                            <div class="search-suggestions-inner">
+                                                <h6 class="search-suggestions-title">Product Suggestions</h6>
+                                                <ul class="product-suggestion-list mt-4">
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop1.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection for most popular and best price item in market </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <div class="price-update-through">
+                                                                        <span class="flash-price fw-500"> $330.00 </span>
+                                                                        <span class="flash-old-prices"> $300.00 </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop2.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$269.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop3.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                    <span class="stock-out"> Stock Out </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop4.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="product-suggestion-list-item">
+                                                        <a href="javascript:void(0)" class="product-suggestion-list-link">
+                                                            <div class="product-image"><img src="assets/img/shop/shop5.jpg" alt="img"></div>
+                                                            <div class="product-info">
+                                                                <div class="product-info-top">
+                                                                    <h6 class="product-name"> Apple Original Airpod Collection </h6>
+                                                                </div>
+                                                                <div class="product-price mt-2">
+                                                                    <span class="main-price fw-500 color-light">$499.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-right-flex">
+                            <div class="track-icon-list">
+                                <div class="single-icon">
+                                    <a class="icon" href="javascript:void(0)"> <i class="lar la-heart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 0 </a>
+                                </div>
+                                <div class="single-icon cart-shopping">
+                                    <a class="icon" href="javascript:void(0)"> <i class="las la-shopping-cart"></i> </a>
+                                    <a href="javascript:void(0)" class="icon-notification"> 2 </a>
+                                    <div class="addto-cart-contents">
+                                        <div class="single-addto-cart-wrappers">
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart1.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Women Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16fw-500 color-heading"> $50.00 </span>
+                                                            <span class="old-price"> $60.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-headingfw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                            <div class="single-addto-carts">
+                                                <div class="addto-cart-flex-contents">
+                                                    <div class="addto-cart-thumb">
+                                                        <a href="javascript:void(0)"> <img src="assets/img/single-page/cart2.jpg" alt="img"> </a>
+                                                    </div>
+                                                    <div class="addto-cart-img-contents">
+                                                        <h6 class="addto-cart-title"> <a href="javascript:void(0)"> Man Dress </a> </h6>
+                                                        <div class="price-updates mt-2">
+                                                            <span class="price-title fs-16fw-500 color-heading"> $40.00 </span>
+                                                            <span class="old-price"> $50.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="addto-cart-counts color-headingfw-500"> 1 </span>
+                                                <a href="javascript:void(0)" class="close-cart">
+                                                    <span class="icon-close color-heading"> <i class="las la-times"></i> </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cart-total-amount">
+                                            <h6 class="amount-title"> Total Amount: </h6> <span class="fs-18fw-500 color-light"> $90.00 </span></div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="03_checkout.html" class="cart-btn radius-0 w-100"> CheckOut </a>
+                                        </div>
+                                        <div class="btn-wrapper mt-3">
+                                            <a href="03_cart.html" class="cart-btn cart-btn-outline radius-0 w-100"> View Cart </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-account">
+                                <a class="accounts" href="javascript:void(0)"> <i class="las la-user"></i> </a>
+                                <ul class="account-list-item">
+                                    <li class="list"> <a href="03_signin.html"> Sign In </a> </li>
+                                    <li class="list"> <a href="03_signup.html"> Sign Up </a> </li>
+                                    <li class="list"> <a href="javascript:void(0)"> Log Out </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu area end -->
+    </header>
+    <div class="search-suggestion-overlay"></div>
+    <!-- Breadcrumb area Starts -->
+    <div class="breadcrumb-area breadcrumb-padding-two section-bg-6">
+        <div class="container container-one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-contents center-text">
+                        <h2 class="breadcrumb-contents-title-two fw-500"> About us </h2>
+                        <ul class="breadcrumb-contents-list mt-2">
+                            <li class="breadcrumb-contents-list-item"> <a href="index.html" class="breadcrumb-contents-list-item-link"> Home </a> </li>
+                            <li class="breadcrumb-contents-list-item"> About </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb area end -->
+    <!-- About area Starts -->
+    <section class="about-theme-area padding-top-75 padding-bottom-50">
+        <div class="container container-one">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 mt-4">
+                    <div class="about-thumb-wrappers">
+                        <div class="about-thumbs">
+                            <img src="assets/img/about/about_01_theme.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="about-content-wrapper">
+                        <div class="about-content-theme">
+                            <h2 class="about-content-theme-titlefw-600"> Our Story </h2>
+                            <p class="about-content-theme-para mt-4"> Mutley, you snickering, floppy eared hound. When courage is needed, you’re never around. Those medals you wear on your moth-eaten chest should be there for bungling at which you are best. So, stop that pigeon, stop that pigeon,
+                                stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon. Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now. </p>
+                            <p class="about-content-theme-para mt-4"> Mutley, you snickering, floppy eared hound. When courage is needed, you’re never around. Those medals you wear on your moth-eaten chest should be there for bungling at which you are best. So, stop that pigeon, stop that pigeon,
+                                stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon. Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now. </p>
+                            <div class="row g-5 mt-3">
+                                <div class="col-lg-6">
+                                    <div class="about-content-theme-single">
+                                        <h3 class="about-content-theme-single-titlefw-500"> Our Vision </h3>
+                                        <p class="about-content-theme-single-para mt-4"> Mutley, you snickering, floppy eared hound. When courage is needed, you’re never around. Those medals you wear on your moth-eaten chest should be there for bungling at which you are best. </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="about-content-theme-single">
+                                        <h3 class="about-content-theme-single-title fw-500"> Our Vision </h3>
+                                        <p class="about-content-theme-single-para mt-4"> Mutley, you snickering, floppy eared hound. When courage is needed, you’re never around. Those medals you wear on your moth-eaten chest should be there for bungling at which you are best. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About area end -->
+    <!-- Counter area starts -->
+    <section class="counter-area color-two padding-top-50 padding-bottom-50">
+        <div class="container container-one">
+            <div class="counter-wrapper counter-wrapper-border bg-white">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="single-counter center-text">
+                            <div class="single-counter-count border-counter">
+                                <span class="odometer" data-odometer-final="2000"></span>
+                                <h4 class="single-counter-count-title">+</h4>
+                            </div>
+                            <p class="single-counter-para color-light mt-3"> Total Domains </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter area end -->
+    <!-- Feedback area starts -->
+    <section class="feedback-area padding-top-50 padding-bottom-50">
+        <div class="container container-one">
+            <div class="section-title theme-one text-left">
+                <h2 class="title ff-roboto-slab"> Clients Feedback </h2>
+                <div class="append-feedback"></div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <div class="col-lg-12 mt-4">
+                    <div class="feedback-slide-right">
+                        <div class="global-slick-init feedback-right-slider nav-style-one slider-inner-margin" data-appendArrows=".append-feedback" data-infinite="true" data-arrows="true" data-dots="false" data-slidesToShow="3" data-swipeToSlide="true" data-autoplay="true" data-autoplaySpeed="2500"
+                            data-prevArrow='<div class="prev-icon"><i class="las la-angle-left"></i></div>' data-nextArrow='<div class="next-icon"><i class="las la-angle-right"></i></div>' data-responsive='[{"breakpoint": 1800,"settings": {"slidesToShow": 4}},{"breakpoint": 1400,"settings": {"slidesToShow": 3}},{"breakpoint": 1200,"settings": {"slidesToShow": 3}},{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 480, "settings": {"slidesToShow": 1} }]'>
+                            <div class="slick-slider-items">
+                                <div class="single-feedback-two">
+                                    <div class="single-feedback-two-contents">
+                                        <div class="single-feedback-two-contents-thumb">
+                                            <img class="radius-parcent-50" src="assets/img/feedback/theme1_fd1.jpg" alt="">
+                                        </div>
+                                        <p class="single-feedback-two-contents-para-two mt-3"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="single-feedback-two-contents-bottom feedback-two-border">
+                                            <div class="single-feedback-two-contents-bottom-flex">
+                                                <div class="single-feedback-two-contents-bottom-details">
+                                                    <h3 class="single-feedback-two-contents-bottom-details-title mt-3"> <a href="javascript:void(0)"> Eric Southwood </a> </h3>
+                                                    <div class="rating-wrap mt-3">
+                                                        <div class="ratings">
+                                                            <span class="hide-rating"></span>
+                                                            <span class="show-rating"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="single-feedback-two-contents-bottom-quote">
+                                                    <i class="las la-quote-left"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slick-slider-items">
+                                <div class="single-feedback-two">
+                                    <div class="single-feedback-two-contents">
+                                        <div class="single-feedback-two-contents-thumb">
+                                            <img class="radius-parcent-50" src="assets/img/feedback/theme1_fd2.jpg" alt="">
+                                        </div>
+                                        <p class="single-feedback-two-contents-para-two mt-3"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="single-feedback-two-contents-bottom feedback-two-border">
+                                            <div class="single-feedback-two-contents-bottom-flex">
+                                                <div class="single-feedback-two-contents-bottom-details">
+                                                    <h3 class="single-feedback-two-contents-bottom-details-title mt-3"> <a href="javascript:void(0)"> Jonny Wilson </a> </h3>
+                                                    <div class="rating-wrap mt-3">
+                                                        <div class="ratings">
+                                                            <span class="hide-rating"></span>
+                                                            <span class="show-rating"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="single-feedback-two-contents-bottom-quote">
+                                                    <i class="las la-quote-left"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slick-slider-items">
+                                <div class="single-feedback-two">
+                                    <div class="single-feedback-two-contents">
+                                        <div class="single-feedback-two-contents-thumb">
+                                            <img class="radius-parcent-50" src="assets/img/feedback/theme1_fd1.jpg" alt="">
+                                        </div>
+                                        <p class="single-feedback-two-contents-para-two mt-3"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="single-feedback-two-contents-bottom feedback-two-border">
+                                            <div class="single-feedback-two-contents-bottom-flex">
+                                                <div class="single-feedback-two-contents-bottom-details">
+                                                    <h3 class="single-feedback-two-contents-bottom-details-title mt-3"> <a href="javascript:void(0)"> Eric John </a> </h3>
+                                                    <div class="rating-wrap mt-3">
+                                                        <div class="ratings">
+                                                            <span class="hide-rating"></span>
+                                                            <span class="show-rating"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="single-feedback-two-contents-bottom-quote">
+                                                    <i class="las la-quote-left"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slick-slider-items">
+                                <div class="single-feedback-two">
+                                    <div class="single-feedback-two-contents">
+                                        <div class="single-feedback-two-contents-thumb">
+                                            <img class="radius-parcent-50" src="assets/img/feedback/theme1_fd2.jpg" alt="">
+                                        </div>
+                                        <p class="single-feedback-two-contents-para-two mt-3"> There’s a voice that keeps on calling me. Down the road, that’s where I’ll always be. Every stop I make, I make a new friend. Can’t stay for long </p>
+                                        <div class="single-feedback-two-contents-bottom feedback-two-border">
+                                            <div class="single-feedback-two-contents-bottom-flex">
+                                                <div class="single-feedback-two-contents-bottom-details">
+                                                    <h3 class="single-feedback-two-contents-bottom-details-title mt-3"> <a href="javascript:void(0)"> Eric John </a> </h3>
+                                                    <div class="rating-wrap mt-3">
+                                                        <div class="ratings">
+                                                            <span class="hide-rating"></span>
+                                                            <span class="show-rating"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="single-feedback-two-contents-bottom-quote">
+                                                    <i class="las la-quote-left"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback area ends -->
+    <!-- Team area starts -->
+    <section class="team-area padding-top-50 padding-bottom-50">
+        <div class="container container-one">
+            <div class="section-title theme-one text-left">
+                <h2 class="title ff-roboto-slab"> Our Team </h2>
+                <div class="append-team"></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 mt-4">
+                    <div class="global-slick-init feedback-right-slider nav-style-one slider-inner-margin" data-appendArrows=".append-team" data-infinite="true" data-arrows="true" data-dots="false" data-slidesToShow="4" data-swipeToSlide="true" data-autoplay="true" data-autoplaySpeed="2500"
+                        data-prevArrow='<div class="prev-icon"><i class="las la-angle-left"></i></div>' data-nextArrow='<div class="next-icon"><i class="las la-angle-right"></i></div>' data-responsive='[{"breakpoint": 1800,"settings": {"slidesToShow": 4}},{"breakpoint": 1400,"settings": {"slidesToShow": 3}},{"breakpoint": 1200,"settings": {"slidesToShow": 3}},{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 480, "settings": {"slidesToShow": 1} }]'>
+                        <div class="slick-slider-items">
+                            <div class="single-team team-padding border-1">
+                                <div class="single-team-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/team/team1.jpg" alt=""> </a>
+                                    <ul class="single-team-socials">
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-linkedin-in"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-team-content mt-3">
+                                    <h4 class="single-team-content-title fw-500"> <a href="javascript:void(0)"> Roman Reinge </a> </h4>
+                                    <span class="single-team-content-title mt-1"> Ui/Ux Designer </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items">
+                            <div class="single-team team-padding border-1">
+                                <div class="single-team-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/team/team1.jpg" alt=""> </a>
+                                    <ul class="single-team-socials">
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-linkedin-in"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-team-content mt-3">
+                                    <h4 class="single-team-content-title fw-500"> <a href="javascript:void(0)"> Esther Howard </a> </h4>
+                                    <span class="single-team-content-title mt-1"> Wordpress Developer </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items">
+                            <div class="single-team team-padding border-1">
+                                <div class="single-team-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/team/team1.jpg" alt=""> </a>
+                                    <ul class="single-team-socials">
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-linkedin-in"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-team-content mt-3">
+                                    <h4 class="single-team-content-title fw-500"> <a href="javascript:void(0)"> Seth Rollins </a> </h4>
+                                    <span class="single-team-content-title mt-1"> Web Developer </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items">
+                            <div class="single-team team-padding border-1">
+                                <div class="single-team-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/team/team1.jpg" alt=""> </a>
+                                    <ul class="single-team-socials">
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-linkedin-in"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-team-content mt-3">
+                                    <h4 class="single-team-content-title fw-500"> <a href="javascript:void(0)"> Brock Lesnar </a> </h4>
+                                    <span class="single-team-content-title  1"> Managing Director </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-items">
+                            <div class="single-team team-padding border-1">
+                                <div class="single-team-thumb">
+                                    <a href="javascript:void(0)"> <img src="assets/img/team/team1.jpg" alt=""> </a>
+                                    <ul class="single-team-socials">
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="single-team-socials-list">
+                                            <a href="javascript:void(0)" class="single-team-socials-list-item"> <i class="lab la-linkedin-in"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-team-content mt-3">
+                                    <h4 class="single-team-content-title fw-500"> <a href="javascript:Void(0)"> John Cena </a> </h4>
+                                    <span class="single-team-content-title mt-1"> Web Designer </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team area ends -->
+    <!-- Promo area Starts -->
+    <section class="promo-area padding-bottom-100 padding-top-25">
+        <div class="container container-one">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-truck-moving"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Free Shipping </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Order Over $90 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-redo-alt"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Easy Return </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Within 15 Days </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-lock"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Secure payment </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Online Shopping </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6 mt-4">
+                    <div class="single-promo center-text single-border promo-padding">
+                        <div class="single-promo-icon">
+                            <i class="las la-gift"></i>
+                        </div>
+                        <div class="single-promo-contents mt-2">
+                            <h4 class="single-promo-contents-title fw-500"> <a href="javascript:void(0)"> Best Offer </a> </h4>
+                            <p class="single-promo-contents-para mt-2"> Gauranteed </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo area end -->
+    <!-- footer area start -->
+    <footer class="footer-area theme-three-footer-border">
+        <div class="footer-top padding-top-35 padding-bottom-90">
+            <div class="container container-one">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <div class="about_us_widget">
+                                <a href="index.html" class="footer-logo"> <img src="assets/img/03_logo_themes.png" alt="footer logo"></a>
+                            </div>
+                            <div class="footer-inner mt-4">
+                                <div class="footer-contact">
+                                    <span class="contact-item"> <span> <i class="las la-phone"></i> </span> <a href="tel:+6275211504"> +627-521-1504 </a> </span>
+                                    <span class="contact-item"> <span> <i class="las la-envelope"></i> </span> <a href="mailto:info@washeco.co.uk"> info@washeco.co.uk </a> </span>
+                                    <span class="contact-item"> <span> <i class="las la-map-marker-alt"></i> </span> 8702 Jayson, Well Suite 348 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400">Important Link</h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> information </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Shipping </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Payment </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Return </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Blog </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400"> Services </h4>
+                            <div class="footer-inner mt-4">
+                                <ul class="footer-link-list">
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> About us </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Contact </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Career </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Terms & Conditions </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)"> <i class="las la-angle-right"></i> Category </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-4">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title fw-400">Subscribe for Updates</h4>
+                            <div class="footer-inner mt-4">
+                                <p class="subscribe-para"> Sign up to our mailing list now! </p>
+                                <form action="#" class="subscribe-form">
+                                    <div class="widget-form-single">
+                                        <input class="form--control" type="text" name="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <button type="submit" class="submit-btn w-100 mt-3"> Subscribe </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-bg">
+            <div class="container container-one">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="footer-widget widget center-text">
+                            <div class="footer-inner">
+                                <div class="footer-socials">
+                                    <ul class="footer-social-list">
+                                        <li class="lists">
+                                            <a class="facebook" href="javascript:void(0)"> <i class="lab la-facebook-f"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="twitter" href="javascript:void(0)"> <i class="lab la-twitter"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="instagram" href="javascript:void(0)"> <i class="lab la-instagram"></i> </a>
+                                        </li>
+                                        <li class="lists">
+                                            <a class="youtube" href="javascript:void(0)"> <i class="lab la-youtube"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="copyright-contents center-text">
+                            <span> &copy;2022 Copyright All Right Reserved by <a href="javascript:void(0)"> MediCom </a> </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-widget widget">
+                            <div class="footer-inner">
+                                <div class="footer-menu">
+                                    <ul class="payment-list">
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment1.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment2.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment3.png" alt=""> </a>
+                                        </li>
+                                        <li class="list">
+                                            <a href="javascript:void(0)"> <img src="assets/img/footer/payment4.png" alt=""> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"> <i class="las la-angle-up"></i> </span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery Migrate -->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lazyload Js -->
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.js"></script>
+    <!-- Viewport js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- All Plugins js -->
+    <script src="assets/js/wow.js"></script>
+    <!-- Nice Select Js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- COuntdown Js -->
+    <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- Nice Scroll -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/nouislider-8.5.1.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
