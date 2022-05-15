@@ -1,0 +1,42 @@
+/*---------------------------------------
+    ## Back Top
+---------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color-one);
+    color: $white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    z-index: 99;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    @include responsive(xs) {
+        height: 40px;
+        width: 40px;
+        font-size: 22px;
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.back-to-top.theme-one {
+    background-color: var(--main-color-two);
+}
+
+.back-to-top.theme-two {
+    background-color: var(--main-color-three);
+}
+
+.back-to-top.theme-three {
+    background-color: var(--main-color-four);
+}

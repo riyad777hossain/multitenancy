@@ -1,0 +1,37 @@
+/* About Theme */
+
+.about-theme-area {}
+
+.about-thumb-wrappers {
+    .about-thumbs {
+        img {
+            width: 100%;
+            padding-right: 30px;
+            @include responsive(allPhone) {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.about-content-wrapper {}
+
+.about-content-theme {
+    &-title {
+        font-size: 46px;
+        line-height: 60px;
+        margin: -13px 0 0;
+    }
+    &-para {}
+    &-single {
+        &-title {
+            font-size: 28px;
+            line-height: 36px;
+            margin: -10px 0 0;
+        }
+        &-para {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}

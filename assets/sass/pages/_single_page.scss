@@ -1,0 +1,14 @@
+/* Single Page Area */
+
+.single-page-area {}
+
+.single-page-wrapper {}
+
+.single-page {
+    &-contents {
+        &-title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+}

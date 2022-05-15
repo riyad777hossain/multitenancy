@@ -1,0 +1,64 @@
+/* Compare area */
+
+.compare-area {}
+
+.single-compare {
+    &-thumb {
+        img {}
+    }
+    &-contents {
+        &-title {
+            font-size: 24px;
+            line-height: 36px;
+            margin: -7px 0 0;
+            @include responsive(lg) {
+                font-size: 22px;
+            }
+        }
+        &-price {
+            font-size: 20px;
+            line-height: 28px;
+            @include responsive(lg) {
+                font-size: 18px;
+            }
+        }
+        &-id {
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--light-color);
+            border-bottom: 2px solid rgba($steam-color, .3);
+            padding-bottom: 15px;
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+        }
+        &-para {
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--extra-light-color);
+            border-bottom: 2px solid rgba($steam-color, .3);
+            padding: 15px 0 18px;
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+        }
+        &-list {
+            display: block;
+            &-item {
+                display: block;
+                padding: 15px 0;
+                border-bottom: 2px solid rgba($steam-color, .3);
+                @include responsive(lg) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .remove-btn {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 28px;
+        border-bottom: 2px solid rgba($steam-color, .5);
+        color: var(--extra-light-color);
+    }
+}

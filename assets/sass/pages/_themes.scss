@@ -1,0 +1,64 @@
+/* Themes area */
+
+.themes-area {
+    position: relative;
+    z-index: 1;
+}
+
+.theme-shape {
+    img {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+}
+
+.single-themes {
+    @include transition(300ms);
+    &:hover {
+        transform: translateY(-5px);
+        .single-themes-thumb {
+            img {
+                @include transform(scale(1.1) skewY(5deg));
+            }
+        }
+    }
+    &-thumb {
+        overflow: hidden;
+        img {
+            @include transition(300ms)
+        }
+    }
+    &-content {
+        &-title {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 38px;
+            color: var(--heading-color);
+            position: relative;
+        }
+        &-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            width: 48px;
+            background-color: rgba(var(--main-color-one-rgb), .3);
+            color: var(--main-color-one);
+            font-size: 28px;
+            @include transition(300ms);
+            &:hover {
+                background-color: var(--main-color-one);
+                color: $white;
+            }
+            i {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

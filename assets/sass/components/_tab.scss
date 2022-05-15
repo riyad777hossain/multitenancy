@@ -1,0 +1,19 @@
+/* Tabs Design */
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    li {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--light-color);
+        line-height: 28px;
+        cursor: pointer;
+        @include transition(300ms);
+        &.active {
+            // color: var(--heading-color);
+        }
+    }
+}

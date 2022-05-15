@@ -1,0 +1,140 @@
+/* Breadcrumb area */
+
+.breadcrumb-area {
+    position: relative;
+}
+
+.breadcrumb-padding {
+    padding: 200px 0 0;
+}
+
+.breadcrumb-padding-two {
+    padding: 40px 0;
+}
+
+.breadcrumb-padding-three {
+    padding: 40px 0 50px;
+}
+
+.breadcrumb-shapes {
+    img {
+        &:nth-child(1) {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: 0;
+            animation: 12s floating_long linear infinite;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: 0;
+            animation: 10s floating_long linear infinite;
+        }
+    }
+}
+
+.breadcrumb-contents {
+    &-title-two {
+        font-size: 36px;
+        line-height: 42px;
+        margin: -10px 0 0;
+    }
+    &-title {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        margin: -10px 0 0;
+        color: var(--heading-color);
+        @include responsive(allPhone) {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        @include responsive(xxs) {
+            font-size: 32px;
+            line-height: 42px;
+        }
+        @include responsive(vxxs) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -5px;
+        &-item {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--light-color);
+            position: relative;
+            @include transition(200ms);
+            &:hover {
+                color: var(--main-color-one);
+            }
+            @include responsive(allPhone) {
+                font-size: 16px;
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            @include responsive(vxxs) {
+                font-size: 14px;
+            }
+            &:not(:last-child) {
+                padding-right: 20px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 2px;
+                    background-color: var(--extra-light-color);
+                    right: 0;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+            }
+            &:not(:first-child) {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+.theme-one {
+    .breadcrumb-contents {
+        &-list {
+            &-item {
+                &:hover {
+                    color: var(--main-color-two);
+                }
+            }
+        }
+    }
+}
+
+.theme-two {
+    .breadcrumb-contents {
+        &-list {
+            &-item {
+                &:hover {
+                    color: var(--main-color-three);
+                }
+            }
+        }
+    }
+}
+
+.theme-three {
+    .breadcrumb-contents {
+        &-list {
+            &-item {
+                &:hover {
+                    color: var(--main-color-four);
+                }
+            }
+        }
+    }
+}

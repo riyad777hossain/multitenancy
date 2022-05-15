@@ -1,0 +1,159 @@
+/* Works area */
+
+.works-area {}
+
+.works-wrapper {
+    div[class*=col] {
+        &:nth-child(4n+1) {
+            .single-works {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    height: 90px;
+                    width: 100%;
+                    background-image: url(../img/works/w-shape1.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 91;
+                    @include responsive(allPhone) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &:nth-child(4n+2) {
+            .single-works {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 70px;
+                    left: 50%;
+                    height: 90px;
+                    width: 100%;
+                    background-image: url(../img/works/w-shape2.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 9;
+                    @include responsive(lg) {
+                        top: 60px;
+                    }
+                    @include responsive(allPhone) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &:nth-child(4n+4) {
+            .single-works {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 50%;
+                    height: 90px;
+                    width: 100%;
+                    background-image: url(../img/works/w-shape1.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 91;
+                    @include responsive(allPhone) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single-works {
+    padding: 30px;
+    @include transition(300ms);
+    @include responsive(lg) {
+        padding: 20px;
+    }
+    @include responsive(xxs) {
+        padding: 20px;
+    }
+    &:hover {
+        .single-works-content {}
+        .single-works-content-number {
+            &::before {
+                background-color: rgba(var(--main-color-one-rgb), .4);
+            }
+        }
+    }
+    &-content {
+        &-number {
+            font-size: 90px;
+            line-height: 80px;
+            font-weight: 400;
+            color: var(--secondary-color);
+            display: inline-block;
+            position: relative;
+            padding-top: 30px;
+            @include transition(300ms);
+            @include responsive(lg) {
+                font-size: 70px;
+                padding-top: 20px;
+            }
+            @include responsive(allPhone) {
+                font-size: 70px;
+                padding-top: 20px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 80px;
+                width: 80px;
+                background-color: rgba(var(--main-color-one-rgb), .2);
+                border-radius: 50%;
+                @include transition(300ms);
+                @include responsive(lg) {
+                    height: 70px;
+                    width: 70px;
+                }
+                @include responsive(allPhone) {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 400;
+            color: var(--heading-color);
+            @include responsive(allPhone) {
+                font-size: 26px;
+            }
+            @include responsive(xs) {
+                font-size: 24px;
+            }
+            @include responsive(vxxs) {
+                font-size: 22px;
+            }
+        }
+        &-para {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            @include responsive(vxxs) {
+                font-size: 14px;
+            }
+        }
+    }
+}

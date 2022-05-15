@@ -1,0 +1,113 @@
+/*---------------------------------------
+    11. Faq
+---------------------------------------*/
+
+.faq-wrapper {
+    padding-left: 100px;
+    @include responsive(xl) {
+        padding-left: 60px;
+    }
+    @include responsive(lg) {
+        padding-left: 40px;
+    }
+    @include responsive(allPhone) {
+        padding-left: 0;
+    }
+}
+
+.faq-contents {
+    .faq-item {
+        padding: 0 30px;
+        @include responsive(xxs) {
+            padding: 0 20px;
+        }
+        &.open {
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: $white;
+            @include box-shadow(0, 0, 20px, rgba($steam-color, .5));
+            padding: 30px 30px;
+            @include responsive(xxs) {
+                padding: 20px;
+            }
+            .faq-title {
+                border-radius: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                &::after {
+                    content: "\f068";
+                }
+            }
+            .faq-panel {
+                .faq-para {
+                    color: var(--light-color);
+                }
+            }
+        }
+        &.active {
+            .faq-panel {
+                display: block;
+            }
+        }
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+        .faq-title {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            color: var(--heading-color);
+            font-family: var(--heading-font);
+            padding: 0px;
+            background: none;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            @include transition(300ms);
+            margin-right: 30px;
+            margin-top: -5px;
+            &::after {
+                @include lineawesomeicon("\f067");
+                position: absolute;
+                right: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include transition(300ms);
+            }
+            @include responsive(xl) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include responsive(lg) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include responsive(allPhone) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+            @include responsive(xs) {
+                font-size: 20px;
+            }
+            @include responsive(vxxs) {
+                font-size: 18px;
+            }
+        }
+        .faq-panel {
+            padding-top: 20px;
+            display: none;
+            .faq-para {
+                font-size: 16px;
+                line-height: 30px;
+                color: var(--light-color);
+                @include responsive(sm) {
+                    font-size: 15px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

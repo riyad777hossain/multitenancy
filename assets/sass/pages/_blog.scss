@@ -1,0 +1,78 @@
+/* Blog area */
+
+.blog-area {}
+
+.single-blog {
+    @include transition(300ms);
+    &:hover {
+        @include transform(translateY(-5px));
+        .single-blog-thumb {
+            img {
+                @include transform (scale(1.1) skewX(5deg));
+            }
+        }
+    }
+    &-thumb {
+        overflow: hidden;
+        img {
+            @include transition(300ms);
+        }
+    }
+    &-contents {
+        &-title {
+            font-size: 28px;
+            line-height: 36px;
+            font-weight: 400;
+            margin: -8px 0 0;
+            @include responsive(xxl) {
+                font-size: 24px;
+            }
+            @include responsive(xl) {
+                font-size: 24px;
+            }
+            @include responsive(lg) {
+                font-size: 24px;
+            }
+            @include responsive(allPhone) {
+                font-size: 24px;
+            }
+            @include responsive(xxs) {
+                font-size: 22px;
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .reading-btn {
+            font-size: 18px;
+            color: var(--main-color-one);
+            line-height: 28px;
+            i {
+                font-size: 16px;
+            }
+            @include responsive(xxl) {
+                font-size: 16px;
+            }
+            @include responsive(xl) {
+                font-size: 16px;
+            }
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+            @include responsive(allPhone) {
+                font-size: 16px;
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+        }
+        .min-reading {
+            color: var(--light-color);
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}

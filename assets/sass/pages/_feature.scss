@@ -1,0 +1,152 @@
+/* Feature area */
+
+.featured-area {
+    position: relative;
+}
+
+.featured-shapes {
+    img {
+        position: absolute;
+        left: 0;
+        top: 150px;
+        z-index: 0;
+    }
+}
+
+.single-feature-wrapper {
+    div[class*=col] {
+        &:not(:nth-child(3n+3)) {
+            .single-feature {
+                border-right: 2px solid rgba(var(--main-color-one-rgb), .1);
+                @include responsive(allPhone) {
+                    border-right: none;
+                }
+                @include responsive(sm) {
+                    border-right: none;
+                }
+            }
+        }
+        .single-feature {
+            border-top: 2px solid rgba(var(--main-color-one-rgb), .1);
+            @include transition(300ms);
+            @include responsive(allPhone) {
+                border-top: none;
+            }
+            &:hover {
+                background-color: $white;
+            }
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            .single-feature {
+                border-top: 0;
+            }
+        }
+        @include responsive(allPhone) {
+            &:not(:nth-child(2n+2)) {
+                border-right: 2px solid rgba(var(--main-color-one-rgb), .1);
+                @include responsive(sm) {
+                    border-right: none;
+                }
+            }
+        }
+        @include responsive(sm) {
+            .single-feature {
+                border-right: none;
+                border-left: none;
+                border-bottom: 2px solid rgba(var(--main-color-one-rgb), .1);
+            }
+            &:nth-child(1) {
+                .single-feature {
+                    border-top: 2px solid rgba(var(--main-color-one-rgb), .1);
+                }
+            }
+        }
+    }
+}
+
+.single-feature {
+    padding: 30px;
+    @include transition(300ms);
+    border: 2px solid transparent;
+    @include responsive(xl) {
+        padding: 20px;
+    }
+    @include responsive(lg) {
+        padding: 20px;
+    }
+    @include responsive(allPhone) {
+        padding: 20px;
+    }
+    &:hover {
+        @include transform(scale(1.1) skewX(5deg));
+        border-color: rgba(var(--main-color-one-rgb), .2);
+        @include responsive(sm) {
+            @include transform (scale(1) translateY(-5px));
+        }
+        .single-feature-icon {
+            background-color: var(--main-color-one);
+            color: $white;
+            img {
+                filter: invert(100%) sepia(32%) saturate(36%) hue-rotate(104deg) brightness(194%) contrast(100%);
+            }
+        }
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        background-color: rgba(var(--main-color-one-rgb), .2);
+        font-size: 60px;
+        @include transition(300ms);
+        img {
+            max-width: 60px;
+            @include transition(300ms);
+        }
+    }
+    &-content {
+        &-title {
+            font-size: 28px;
+            line-height: 38px;
+            color: var(--heading-color);
+            font-weight: 400;
+            transition: all .2s;
+            @include responsive(xl) {
+                font-size: 26px;
+            }
+            @include responsive(lg) {
+                font-size: 24px;
+            }
+            @include responsive(allPhone) {
+                font-size: 24px;
+            }
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+        &-para {
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--paragraph-color);
+            @include responsive(lg) {
+                font-size: 15px;
+            }
+        }
+        &-btn-explore {
+            display: inline-block;
+            font-size: 18px;
+            color: var(--heading-color);
+            line-height: 28px;
+            @include transition(300ms);
+            &:hover {
+                color: var(--main-color-one);
+            }
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+        }
+    }
+}

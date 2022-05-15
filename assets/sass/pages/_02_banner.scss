@@ -1,0 +1,258 @@
+.navbar-area {
+    padding: 20px 0;
+}
+
+
+/* banner Theme Two */
+
+.banner-area {}
+
+.slick-active {
+    .banner-image-content {
+        &-title {
+            -webkit-animation: flipInX 2s 1s both;
+            animation: flipInX 2s 1s both;
+        }
+        &-para {
+            -webkit-animation: fadeInUp 1s 1s both;
+            animation: fadeInUp 2s 1s both;
+        }
+        .btn-wrapper {
+            .cmn-btn {
+                -webkit-animation: zoomIn 1s .8s both;
+                animation: zoomIn 1s .8s both;
+            }
+        }
+    }
+    .banner-image-thumb {
+        img {
+            -webkit-animation: zoomIn 2s 1s both;
+            animation: zoomIn 2s 1s both;
+        }
+    }
+}
+
+.theme-two-banner-padding {
+    padding: 220px 0 150px;
+    @include responsive(lg) {
+        padding: 190px 0 100px;
+    }
+    @include responsive(allPhone) {
+        padding: 170px 0 100px;
+    }
+    @include responsive(xs) {
+        padding: 140px 0 100px;
+    }
+    @include responsive(vxxs) {
+        padding: 110px 0 70px;
+    }
+}
+
+.banner-content-wrapper {
+    position: relative;
+    z-index: 2;
+    .banner-image {
+        position: relative;
+        z-index: 2;
+        &-thumb {
+            img {}
+        }
+        &-content {
+            max-width: 750px;
+            padding: 50px 0 50px 120px;
+            position: relative;
+            z-index: 5;
+            @include responsive(xxl) {
+                padding: 40px 0 40px 50px;
+            }
+            @include responsive(xl) {
+                padding: 30px 0 30px 40px;
+                max-width: 450px;
+            }
+            @include responsive(lg) {
+                padding: 30px 0 30px 40px;
+                max-width: 450px;
+            }
+            @include responsive(allPhone) {
+                padding: 20px 0 0px 30px;
+            }
+            @include responsive(xs) {
+                padding: 20px 0 0px 20px;
+            }
+            @include responsive(vxxs) {
+                padding: 20px 0 0px 10px;
+            }
+            &-title {
+                font-size: 80px;
+                line-height: 85px;
+                font-weight: 500;
+                margin: -10px 0 0;
+                @include responsive(xl) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+                @include responsive(lg) {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+                @include responsive(allPhone) {
+                    font-size: 42px;
+                    line-height: 1.2;
+                }
+                @include responsive(xs) {
+                    font-size: 36px;
+                }
+                @include responsive(xxs) {
+                    font-size: 32px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 28px;
+                }
+                &:hover {
+                    color: var(--main-color-three);
+                }
+            }
+            &-para {
+                font-size: 20px;
+                color: var(--light-color);
+                font-weight: 400;
+                line-height: 28px;
+                @include responsive(xxs) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.theme-two {
+    .nav-style-one .prev-icon,
+    .nav-style-one .next-icon {
+        &:hover {
+            background-color: var(--main-color-three);
+            color: $white;
+            border-color: var(--main-color-three);
+        }
+    }
+    .slick-active {
+        .banner-image-content {
+            &-title {
+                -webkit-animation: flipInX 2s 1s both;
+                animation: flipInX 2s 1s both;
+            }
+            &-para {
+                -webkit-animation: fadeInUp 2s 1s both;
+                animation: fadeInUp 2s 1s both;
+            }
+            .btn-wrapper {
+                .cmn-btn {
+                    -webkit-animation: zoomIn 1s .8s both;
+                    animation: zoomIn 1s .8s both;
+                }
+            }
+        }
+        .banner-image-thumb {
+            img {
+                -webkit-animation: zoomIn 1.5s 2s both;
+                animation: zoomIn 1.5s 2s both;
+            }
+        }
+    }
+}
+
+.theme-three {
+    .nav-style-one .prev-icon,
+    .nav-style-one .next-icon {
+        &:hover {
+            background-color: var(--main-color-four);
+            color: $white;
+            border-color: var(--main-color-four);
+        }
+    }
+    .banner-content-wrapper {
+        @include responsive(allPhone) {
+            padding: 70px 0 90px;
+        }
+        .banner-image-content {
+            padding: 70px 0 70px 120px;
+            @include responsive(xxl) {
+                padding: 100px 0 100px 90px;
+                max-width: 100%;
+            }
+            @include responsive(xl) {
+                padding: 100px 0 100px 60px;
+                max-width: 100%;
+            }
+            @include responsive(lg) {
+                padding: 100px 0 100px 50px;
+            }
+            @include responsive(allPhone) {
+                padding: 30px 30px 0 30px;
+            }
+            @include responsive(xs) {
+                padding: 30px 20px 0 20px;
+            }
+            &-title {
+                @include responsive(xxl) {
+                    font-size: 65px;
+                    line-height: 70px;
+                }
+                &-span {
+                    color: var(--main-color-four);
+                    @include transition(300ms);
+                }
+                &:hover {
+                    color: var(--main-color-four);
+                    .banner-image-content-title-span {
+                        color: var(--heading-color);
+                    }
+                }
+            }
+            &-para {
+                @include responsive(xl) {
+                    font-size: 18px;
+                }
+                @include responsive(lg) {
+                    font-size: 18px;
+                }
+                @include responsive(allPhone) {
+                    font-size: 18px;
+                }
+                @include responsive(xs) {
+                    font-size: 16px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .slick-active {
+        .banner-image-content {
+            &-title {
+                -webkit-animation: flipInX 2s 1s both;
+                animation: flipInX 2s 1s both;
+            }
+            &-para {
+                -webkit-animation: fadeInUp 2s 1s both;
+                animation: fadeInUp 2s 1s both;
+            }
+            .btn-wrapper {
+                .cmn-btn {
+                    -webkit-animation: zoomIn 1s .8s both;
+                    animation: zoomIn 1s .8s both;
+                }
+            }
+        }
+        .banner-image-thumb {
+            img {
+                -webkit-animation: zoomIn 1.5s 2s both;
+                animation: zoomIn 1.5s 2s both;
+            }
+        }
+    }
+}

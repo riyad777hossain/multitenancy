@@ -1,0 +1,103 @@
+/* Badge Area */
+
+.breadcrumb-area-two {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.breadcrumb-padding-two {
+    padding: 40px 0;
+}
+
+.breadcrumb-contents {
+    text-align: center;
+    &-title {
+        font-size: 36px;
+        line-height: 42px;
+        @include responsive(sm) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        @include responsive(xxs) {
+            font-size: 30px;
+        }
+        @include responsive(vxxs) {
+            font-size: 28px;
+        }
+    }
+    .breadcrumb-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .list {
+            position: relative;
+            z-index: 2;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 30px;
+            @include transition(all 300ms);
+            @include responsive(allPhone) {
+                font-size: 16px;
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            &:hover {
+                color: var(--main-color-one);
+            }
+            &:not(:last-child) {
+                padding-right: 20px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: var(--extra-light-color);
+                    height: 15px;
+                    width: 2px;
+                    right: 1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &:not(:first-child) {
+                padding-left: 20px;
+            }
+        }
+    }
+    &.hover-color-one {
+        .bage-list {
+            .list {
+                &:hover {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+    &.hover-color-two {
+        .bage-list {
+            .list {
+                &:hover {
+                    color: var(--main-color-two);
+                }
+            }
+        }
+    }
+    &.hover-color-three {
+        .bage-list {
+            .list {
+                &:hover {
+                    color: var(--main-color-three);
+                }
+            }
+        }
+    }
+    &.hover-color-four {
+        .bage-list {
+            .list {
+                &:hover {
+                    color: var(--main-color-four);
+                }
+            }
+        }
+    }
+}

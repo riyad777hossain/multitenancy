@@ -1,0 +1,277 @@
+.navbar-area {
+    padding: 20px 0;
+}
+
+
+/* Banner  */
+
+.banner-area {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-color: $section-bg-2;
+        z-index: -11;
+    }
+}
+
+.slick-active {
+    .banner-image-content {
+        &-title {
+            -webkit-animation: flipInX 2s 1s both;
+            animation: flipInX 2s 1s both;
+        }
+        &-para {
+            -webkit-animation: fadeInUp 1s 1s both;
+            animation: fadeInUp 2s 1s both;
+        }
+        .btn-wrapper {
+            .cmn-btn {
+                -webkit-animation: zoomIn 1s .8s both;
+                animation: zoomIn 1s .8s both;
+            }
+        }
+    }
+    .banner-image-thumb {
+        img {
+            -webkit-animation: slideInUp 2s 1s both;
+            animation: slideInUp 2s 1s both;
+        }
+    }
+}
+
+.banner-social-content {
+    position: absolute;
+    left: -20px;
+    bottom: 70px;
+    z-index: 95;
+    @include transform(rotate(-90deg));
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include responsive(xs) {
+        display: none;
+    }
+    .item {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--heading-color);
+        @include transition(200ms);
+        &:hover {
+            color: var(--main-color-two);
+        }
+    }
+}
+
+.jacket-text-shape {
+    img {
+        position: absolute;
+        right: 170px;
+        top: 50%;
+        @include transform(translateY(-50%));
+        z-index: 5;
+        @include responsive(xxl) {
+            right: 70px;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        @include responsive(xl) {
+            right: 70px;
+            max-width: 300px;
+            max-height: 250px;
+        }
+        @include responsive(lg) {
+            right: 40px;
+            max-width: 250px;
+            max-height: 350px;
+        }
+        @include responsive(allPhone) {
+            right: 30px;
+            max-width: 250px;
+            max-height: 250px;
+        }
+        @include responsive(sm) {
+            right: 30px;
+            max-width: 250px;
+            max-height: 200px;
+        }
+        @include responsive(vxxs) {
+            display: none;
+        }
+    }
+}
+
+.banner-content-wrapper {
+    position: relative;
+    z-index: 2;
+    .banner-image {
+        position: relative;
+        z-index: 2;
+        &-thumb {
+            position: absolute;
+            right: 300px;
+            bottom: 0;
+            @include responsive(xxxl) {
+                max-width: 650px;
+                right: 250px;
+            }
+            @include responsive(xxl) {
+                max-width: 580px;
+                right: 100px;
+            }
+            @include responsive(xl) {
+                max-width: 470px;
+                right: 100px;
+            }
+            @include responsive(lg) {
+                max-width: 470px;
+                right: 50px;
+            }
+            @include responsive(allPhone) {
+                max-width: 470px;
+                right: 0px;
+            }
+            @include responsive(sm) {
+                max-width: 350px;
+                display: none;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                height: 500px;
+                width: 500px;
+                background-color: var(--secondary-color-two);
+                left: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                z-index: -3;
+                border-radius: 50%;
+                @include responsive(xl) {
+                    height: 400px;
+                    width: 400px;
+                }
+                @include responsive(lg) {
+                    height: 400px;
+                    width: 400px;
+                }
+                @include responsive(allPhone) {
+                    height: 350px;
+                    width: 350px;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-image: url(../img/banner/01_theme_mask.png);
+                left: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                z-index: -1;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include responsive(allPhone) {
+                    max-width: 300px;
+                }
+            }
+            img {}
+        }
+        &-content {
+            max-width: 600px;
+            padding: 220px 0 220px 120px;
+            position: relative;
+            z-index: 5;
+            @include responsive(xxxl) {
+                padding: 180px 0 180px 50px;
+            }
+            @include responsive(xxl) {
+                padding: 134px 0 134px 50px;
+            }
+            @include responsive(xl) {
+                padding: 112px 0 112px 50px;
+                max-width: 450px;
+            }
+            @include responsive(lg) {
+                padding: 120px 0 120px 50px;
+                max-width: 450px;
+            }
+            @include responsive(allPhone) {
+                max-width: 330px;
+                padding: 150px 0 150px 40px;
+            }
+            @include responsive(xs) {
+                max-width: 300px;
+                padding: 120px 0 120px 20px;
+            }
+            @include responsive(vxxs) {
+                max-width: 100%;
+                padding: 80px 0 80px 10px;
+            }
+            &-title {
+                font-size: 65px;
+                line-height: 85px;
+                font-weight: 500;
+                font-family: var(--jost-font);
+                @include responsive(xl) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+                @include responsive(lg) {
+                    font-size: 36px;
+                    line-height: 50px;
+                }
+                @include responsive(allPhone) {
+                    font-size: 32px;
+                    line-height: 1.2;
+                }
+                @include responsive(xs) {
+                    font-size: 28px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 26px;
+                }
+                &:hover {
+                    color: var(--main-color-two);
+                }
+                &.hover-color-one {
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                }
+                &.hover-color-three {
+                    &:hover {
+                        color: var(--main-color-three);
+                    }
+                }
+                &.hover-color-four {
+                    &:hover {
+                        color: var(--main-color-four);
+                    }
+                }
+            }
+            &-para {
+                font-size: 18px;
+                color: var(--light-color);
+                font-weight: 400;
+                line-height: 28px;
+                @include responsive(xxs) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

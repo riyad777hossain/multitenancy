@@ -1,0 +1,99 @@
+/* Choose area */
+
+.choose-area {}
+
+.choose-thumb-content {
+    @include responsive(allPhone) {
+        margin-bottom: 20px;
+    }
+    .thumb {
+        text-align: center;
+        img {
+            animation: 5s floating linear infinite;
+        }
+    }
+}
+
+.choose-wrapper {
+    padding-left: 70px;
+    @include responsive(xl) {
+        padding-left: 50px;
+    }
+    @include responsive(lg) {
+        padding-left: 0;
+    }
+    @include responsive(allPhone) {
+        padding-left: 0;
+    }
+}
+
+.single-choose {
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(var(--main-color-one-rgb), .05);
+    @include responsive(xl) {
+        padding: 20px;
+    }
+    @include responsive(sm) {
+        padding: 20px;
+    }
+    &-flex {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        @include responsive(xs) {
+            gap: 10px;
+        }
+        @include responsive(xxs) {
+            display: block;
+        }
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        height: 100px;
+        width: 100px;
+        background-color: rgba(var(--main-color-one-rgb), .2);
+        img {}
+    }
+    &-content {
+        flex: 1;
+        @include responsive(xxs) {
+            margin-top: 20px;
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 400;
+            margin: -7px 0 0;
+            @include responsive(xl) {
+                font-size: 26px;
+            }
+            @include responsive(lg) {
+                font-size: 26px;
+            }
+            @include responsive(sm) {
+                font-size: 24px;
+            }
+            @include responsive(xs) {
+                font-size: 22px;
+            }
+        }
+        &-para {
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 15px;
+            @include responsive(xl) {
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+            }
+            @include responsive(sm) {
+                margin-top: 10px;
+            }
+        }
+    }
+}

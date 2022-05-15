@@ -1,0 +1,29 @@
+/* Store area */
+
+.store-area {}
+
+.store-tab-contents {}
+
+.store-tabs {
+    display: block;
+    background-color: $white;
+    border: 1px solid rgba($steam-color, .3);
+    li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 18px 25px;
+        background-color: $white;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--jost-font);
+        color: var(--light-color);
+        border-right: 5px solid $white;
+        @include transition(200ms);
+        &.active {
+            background-color: $section-bg-2;
+            border-right: 5px solid var(--main-color-two);
+            color: var(--heading-color);
+        }
+    }
+}

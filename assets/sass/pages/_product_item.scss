@@ -1,0 +1,30 @@
+/* Single Product Item Css */
+
+.single-product-area {}
+
+.single-product-item-padding {
+    padding: 30px;
+}
+
+.single-product-item {
+    &-border {
+        border: 1px solid rgba($steam-color, .5);
+    }
+    &-thumb {}
+    &-contents {
+        &-title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &-subtitle {
+            font-size: 16px;
+        }
+    }
+}
+
+.center-text {
+    .single-product-item-thumb {
+        display: inline-block;
+        margin: auto;
+    }
+}

@@ -1,0 +1,16 @@
+/* Brand Logo */
+
+.brand-area {}
+
+.single-brand {
+    &-item {
+        &:hover {
+            img {
+                filter: invert(0%) sepia(100%) saturate(71%) hue-rotate(0deg) brightness(6%) contrast(53%);
+            }
+        }
+        img {
+            @include transition(200ms);
+        }
+    }
+}

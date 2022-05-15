@@ -1,0 +1,335 @@
+/* Cart  */
+
+.cart-area {}
+
+.cart-wrapper {}
+
+.table-list-content {
+    &.style-02 {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    .custom--table {
+        // border-collapse: separate;
+        // border-spacing: 20px 0;
+        &.table-border {
+            border: 1px solid rgba($steam-color, .4);
+        }
+        thead {
+            &.head-bg {
+                background: rgba($steam-color, .4);
+            }
+            tr {
+                th {
+                    padding: 20px 5px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    @include responsive(xl) {
+                        white-space: nowrap;
+                    }
+                    &:first-child {
+                        padding-left: 20px;
+                    }
+                    &:last-child {
+                        padding-right: 20px;
+                    }
+                    &:nth-child(1) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid rgba($steam-color, .4);
+                position: relative;
+                z-index: 1;
+                td {
+                    &:first-child {
+                        padding-left: 20px;
+                    }
+                    &:last-child {
+                        padding-right: 20px;
+                        @include responsive(allPhone) {
+                            padding-right: 7px;
+                        }
+                    }
+                    .close-table-cart {
+                        position: unset;
+                        right: 5px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        transition: all .3s;
+                        &:hover {
+                            color: var(--main-color-two);
+                            transform: scale(1.3);
+                        }
+                        @include responsive(allPhone) {
+                            top: 10px;
+                            right: auto;
+                            left: 10px;
+                            background: var(--main-color-two);
+                            color: $white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 30px;
+                            width: 30px;
+                            margin-left: auto;
+                            margin-bottom: 10px;
+                            margin-right: 10px;
+                            &:hover {
+                                transform: scale(1.3);
+                                background: $white;
+                                color: var(--main-color-two);
+                            }
+                        }
+                    }
+                    .product-name-table {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        @include responsive(xl) {
+                            flex-wrap: nowrap;
+                        }
+                        @include responsive(allPhone) {
+                            display: block;
+                            margin-right: 10px;
+                        }
+                        @include responsive(xxs) {
+                            display: block;
+                            margin-right: 10px;
+                            max-width: 250px;
+                            margin-left: auto;
+                        }
+                        @include responsive(vxxs) {
+                            max-width: 200px;
+                        }
+                        .thumbs {
+                            height: 110px;
+                            width: 110px;
+                            @include responsive(allPhone) {
+                                margin-left: auto;
+                                height: 100px;
+                                width: 100px;
+                            }
+                            img {}
+                        }
+                        .carts-contents {
+                            text-align: left;
+                            flex: 1;
+                            @include responsive(xxl) {
+                                margin-left: 20px;
+                            }
+                            @include responsive(xl) {
+                                margin-left: 10px;
+                            }
+                            @include responsive(allPhone) {
+                                margin-left: 0px;
+                                text-align: right;
+                                margin-top: 10px;
+                            }
+                            .name-title {
+                                font-size: 20px;
+                                font-weight: 500;
+                                color: var(--heading-color);
+                                @include responsive(allPhone) {
+                                    margin-top: 10px;
+                                }
+                            }
+                            .name-subtitle {
+                                font-size: 16px;
+                                margin-top: 10px;
+                                display: block;
+                            }
+                        }
+                    }
+                    &.price-td {
+                        font-weight: 500;
+                        @include responsive(allPhone) {
+                            margin-right: 10px;
+                        }
+                    }
+                    .product-quantity {
+                        position: relative;
+                        z-index: 2;
+                        margin: 0 auto;
+                        width: 150px;
+                        text-align: center;
+                        height: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        @include responsive(allPhone) {
+                            margin-right: 10px;
+                            margin-left: auto;
+                        }
+                        .quantity-input {
+                            border: 0;
+                            background-color: rgba($steam-color, .5);
+                            border: 1px solid rgba($steam-color, .5);
+                            width: 50px;
+                            height: 35px;
+                            text-align: center;
+                            position: relative;
+                            z-index: 1;
+                            padding: 5px 0;
+                            font-size: 14px;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 100%;
+                                width: 1px;
+                                background: rgba($steam-color, .4);
+                            }
+                        }
+                        .substract,
+                        .plus {
+                            padding: 0 5px;
+                            left: 5px;
+                            cursor: pointer;
+                            border: 1px solid rgba($steam-color, .5);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            width: 35px;
+                        }
+                        .plus {
+                            left: auto;
+                            right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-update-btn {
+    .btn-table {
+        font-size: 18px;
+        padding: 10px 30px;
+        color: var(--light-color);
+        display: inline-block;
+        transition: all .3s;
+        @include responsive(xxs) {
+            padding: 8px 18px;
+        }
+        @include responsive(vxxs) {
+            font-size: 16px;
+        }
+        &.btn-border-1 {
+            border: 1px solid rgba($steam-color, .4);
+        }
+        &:hover {
+            background: var(--main-color-one);
+            color: $white;
+            border-color: var(--main-color-one);
+        }
+    }
+}
+
+.cart-btn {
+    .cart-available {
+        background-color: var(--main-color-two);
+        border: 2px solid var(--main-color-two);
+        color: $white;
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    .disabled {
+        cursor: no-drop;
+        background-color: $steam-color;
+        border-color: $steam-color;
+        color: var(--light-color);
+    }
+}
+
+.stock-out {
+    color: #ff0000;
+    cursor: no-drop;
+}
+
+.coupon-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    &.border-1 {
+        border-color: rgba($steam-color, .4);
+    }
+}
+
+.coupon-border {
+    border-top: 1px solid rgba($steam-color, .4);
+}
+
+.coupon-contents {
+    padding: 50px;
+    @include responsive(xxl) {
+        padding: 35px 35px 40px;
+    }
+    @include responsive(xl) {
+        padding: 40px 30px;
+    }
+    @include responsive(lg) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @include responsive(allPhone) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @include responsive(xxs) {
+        padding: 30px;
+    }
+    @include responsive(vxxs) {
+        padding: 20px 10px;
+    }
+    &-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &-form {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .single-input {
+            flex: 1;
+            .form--control {}
+        }
+        .btn-submit {
+            padding: 12px 20px;
+            font-size: 16px;
+            background: none;
+            border: 2px solid rgba(var(--main-color-two-rgb), .5);
+            @include transition(300ms);
+            color: var(--main-color-two);
+            &:hover {
+                background: var(--main-color-two);
+                color: $white;
+            }
+        }
+    }
+}
+
+.coupon-contents-details {
+    &-list {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            color: var(--light-color);
+            font-size: 18px;
+        }
+    }
+}
+
+.coupon-flex-list {
+    .list {}
+}

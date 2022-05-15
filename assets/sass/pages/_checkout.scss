@@ -1,0 +1,495 @@
+/* Checkout */
+
+.summery-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin: -5px 0 0;
+    @include responsive(allPhone) {
+        font-size: 32px;
+    }
+    @include responsive(xs) {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    @include responsive(vxxs) {
+        font-size: 28px;
+    }
+}
+
+.checkout-title {
+    .click-open-form {
+        color: var(--main-color-two);
+        &:hover {
+            color: var(--main-color-two);
+            font-weight: 500;
+        }
+    }
+    i {
+        color: var(--main-color-two);
+    }
+}
+
+.checkout-form-open {
+    max-width: 500px;
+    background: $white;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: (all 500ms linear);
+    &.active {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+
+.checkout-form-contents {
+    @include box-shadow(0, 0, 20px, rgba($steam-color, .2));
+    &.form-padding {
+        padding: 40px;
+    }
+    &-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin: -6px 0 0;
+    }
+    &-form {
+        &-input {
+            .label-title {
+                font-size: 15px;
+            }
+            .form--control {
+                font-size: 15px;
+                padding: 0 15px;
+                color: var(--extra-light-color);
+                @include transition(300ms);
+                @include box-shadow(0, 0, 20px, rgba($white, .1));
+                border: 1px solid rgba($steam-color, .4);
+                &:focus {
+                    @include box-shadow(0, 0, 20px, rgba(var(--main-color-two-rgb), .1));
+                    border-color: rgba(var(--main-color-two-rgb), .3);
+                }
+            }
+        }
+        .btn-submit {
+            padding: 12px 20px;
+            background-color: var(--main-color-two);
+            border: 2px solid var(--main-color-two);
+            color: $white;
+            @include transition(300ms);
+            &:hover {
+                background: none;
+                color: var(--main-color-two);
+            }
+        }
+    }
+    &-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        @include responsive(xs) {
+            display: block;
+        }
+    }
+    .check-input:checked {
+        background-color: var(--main-color-two);
+        border-color: var(--main-color-two);
+    }
+    &-bottom {
+        .or-contents {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            .or-para {
+                background: $white;
+                padding: 10px 30px;
+                color: var(--light-color);
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                background: rgba($steam-color, .4);
+                width: 100%;
+                height: 1px;
+                z-index: -1;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+        .signin-others {
+            &-single {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                &-btn {
+                    padding: 13px 10px;
+                    display: inline-block;
+                    border: 1px solid rgba($steam-color, 0.4);
+                    color: var(--light-color);
+                    text-align: center;
+                    @include transition(300ms);
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    justify-content: center;
+                    &:hover {
+                        border-color: var(--main-color-two);
+                        color: var(--main-color-two);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checkout-signup-form-wrapper {
+    max-width: 700px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+    &.active {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 30px;
+        background: $white;
+    }
+}
+
+.checkout-address-form-wrapper {
+    max-width: 700px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+    &.active {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 30px;
+        background: $white;
+    }
+}
+
+.create-accounts {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    color: var(--heading-color) !important;
+    @include responsive(allPhone) {
+        font-size: 18px;
+    }
+    @include responsive(xs) {
+        font-size: 16px;
+    }
+    &:hover {
+        color: var(--heading-color);
+    }
+    &::before {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        border: 1px solid $STEAM;
+        content: '';
+        transition: all .2s;
+    }
+    &.active {
+        &::before {
+            content: "\f00c";
+            @include linefont;
+            background: var(--main-color-two);
+            color: $white;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            border-color: var(--main-color-two);
+        }
+    }
+}
+
+.checkout-inner {
+    &-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin: -8px 0 0;
+    }
+    &-contents {}
+}
+
+.checkout-form {
+    &-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 24px;
+    }
+    .single-input {
+        .label-title {
+            font-size: 15px;
+        }
+        .form--control {
+            height: 55px;
+            width: 100%;
+            border: 1px solid rgba($steam-color, .4);
+            @include box-shadow(0, 0, 20px, rgba($white, .1));
+            @include transition(300ms);
+            font-size: 15px;
+            color: var(--extra-light-color);
+            &:focus {
+                @include box-shadow(0, 0, 20px, rgba($steam-color, .1));
+                border-color: rgba(var(--main-color-two-rgb), .3);
+            }
+        }
+        .form--message {
+            height: 150px;
+        }
+    }
+    .input-flex-item {
+        .single-input {
+            .form--control {}
+            .form--message {
+                height: 120px;
+            }
+        }
+    }
+    .checkbox-inlines {
+        .checkbox-label {
+            color: var(--heading-color);
+            font-size: 18px;
+        }
+    }
+    .btn-submit {
+        @extend .submit-style;
+        @include transition(300ms);
+        font-size: 18px;
+        &:hover {
+            background: none;
+            color: var(--main-color-two);
+        }
+    }
+}
+
+.checkout-order-summery {
+    position: sticky;
+    top: 0;
+    padding: 40px;
+    @include responsive(xxl) {
+        padding: 40px;
+    }
+    @include responsive(xl) {
+        padding: 30px;
+    }
+    @include responsive(lg) {
+        padding: 30px;
+    }
+    @include responsive(xxs) {
+        padding: 30px;
+    }
+    @include responsive(vxxs) {
+        padding: 20px 10px;
+    }
+    .checkbox-inlines {
+        .check-input:checked {
+            background-color: var(--main-color-two);
+            border-color: var(--main-color-two);
+        }
+    }
+    .terms-condition {
+        color: var(--main-color-two);
+    }
+}
+
+.checkout-cart-wrapper {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.single-checkout-cart-items {
+    .single-check-carts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .check-cart-flex-contents {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .checkout-cart-thumb {
+                height: 95px;
+                width: 100px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .checkout-cart-img-contents {
+                text-align: left;
+                flex: 1;
+                .product-items {
+                    margin-top: 10px;
+                }
+            }
+        }
+        .checkout-cart-price {
+            font-size: 18px;
+        }
+    }
+}
+
+// .checkout-flex-list {
+//     .list {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 15px 0;
+//         color: var(--light-color);
+//         font-size: 18px;
+//         @include responsive(allPhone) {
+//             font-size: 16px;
+//             padding: 10px 0;
+//         }
+//         @include responsive(vxxs) {
+//             font-size: 15px;
+//             padding: 10px 0;
+//         }
+//         span {
+//             &.product-qnt {
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 20px;
+//             }
+//             .product-cross {
+//                 margin-bottom: 0;
+//                 position: relative;
+//                 z-index: 2;
+//                 &::after {
+//                     @include linefont;
+//                     content: "\f00d";
+//                     position: absolute;
+//                     right: -20px;
+//                 }
+//             }
+//         }
+//         .input-values {
+//             width: 40px;
+//             background: none;
+//             border: none;
+//             outline: none;
+//         }
+//     }
+// }
+.coupon-form {
+    position: relative;
+    .single-input {
+        .form--control {
+            height: 60px;
+            background: $white;
+            border: 1px solid rgba($steam-color, .4);
+            transition: all .3s;
+            &:focus {
+                border-color: rgba(var(--main-color-two-rgb), .3);
+                box-shadow: 0 0 10px rgba(var(--main-color-two-rgb), .1);
+            }
+        }
+    }
+    .apply-coupon {
+        position: absolute;
+        right: 5px;
+        height: 50px;
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--main-color-two);
+        color: $white;
+        transition: all .3s;
+        &:hover {
+            background: none;
+            color: var(--main-color-two);
+            border-color: var(--main-color-two);
+        }
+    }
+}
+
+.btn-coupon {
+    outline: none;
+    border: 1px solid $steam-color;
+    background: $steam-color;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s;
+    &.btn-bg-heading {
+        background: var(--heading-color);
+        color: $white;
+        border: 2px solid transparent;
+        &:hover {
+            background: none;
+            color: var(--heading-color);
+            border-color: var(--heading-color);
+        }
+    }
+}
+
+.payment-inlines {
+    .payment-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .single-card {
+            background: $white;
+            padding: 5px 10px;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 10px;
+            border: 2px solid transparent;
+            transition: all .3s;
+            &.active {
+                border-color: var(--main-color-two);
+                &::before {
+                    content: "\f00c";
+                    @include linefont;
+                    background: var(--main-color-two);
+                    color: $white;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    height: 16px;
+                    width: 16px;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -7px;
+                    right: -7px;
+                    z-index: 9;
+                    transition: all .3s;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

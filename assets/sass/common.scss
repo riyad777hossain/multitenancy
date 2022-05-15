@@ -1,0 +1,45 @@
+//== Abstract page
+@import "abstracts/mixins";
+@import "abstracts/variables";
+// base page
+@import "base/global";
+//== layout Pages
+@import "layout/navbar";
+@import "layout/footer";
+// Components page
+@import "components/tab";
+@import "components/faq";
+@import "components/back_top";
+@import "components/form";
+@import "components/checkbox";
+@import "components/button";
+@import "components/section_title";
+@import "components/global_ratings";
+@import "components/price-updated-through";
+@import "pages/counter";
+@import "components/countdown";
+@import "components/range-slider";
+@import "components/table";
+@import "components/isotope_list";
+// Section page
+@import "pages/breadcrumb";
+@import "pages/promo";
+@import "pages/about";
+@import "pages/about_01_theme";
+@import "pages/global_card";
+@import "pages/shop-area";
+@import "pages/discount.scss";
+@import "pages/blog_details";
+@import "pages/feedback_01_theme";
+@import "pages/team";
+@import "pages/contact-01_theme";
+@import "pages/single_page";
+@import "pages/order_tracking";
+@import "pages/compare";
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/shop_details";
+@import "pages/search_suggestion";
+@import "pages/category";
+@import "pages/deal_area";
+@import "pages/signin_signup";

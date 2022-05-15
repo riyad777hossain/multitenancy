@@ -1,0 +1,106 @@
+/* Feedback area */
+
+.feedback-area {}
+
+.single-feedback {
+    padding: 30px;
+    @include transition(300ms);
+    @include box-shadow(0, 0, 30px, rgba($steam-color, .1));
+    @include responsive(xl) {
+        padding: 20px;
+    }
+    @include responsive(allPhone) {
+        padding: 20px;
+    }
+    &:hover {
+        @include transform(scale(1.1));
+        @include box-shadow(0, 0, 30px, rgba($steam-color, .5));
+    }
+    &-content {
+        &-icon {
+            font-size: 70px;
+            color: var(--main-color-one);
+            margin: -15px 0;
+        }
+        &-para {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 32px;
+            color: var(--extra-light-color);
+            padding-top: 15px;
+            @include responsive(xl) {
+                font-size: 16px;
+            }
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+            @include responsive(xxs) {
+                margin-top: 5px;
+            }
+        }
+    }
+    &-author {
+        padding-top: 30px;
+        &.author-border {
+            border-top: 2px solid rgba($steam-color, .3);
+            margin-top: 30px;
+        }
+        &-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include responsive(xl) {
+                gap: 10px;
+            }
+            @include responsive(allPhone) {
+                gap: 10px;
+            }
+            @include responsive(vxxs) {
+                display: block;
+            }
+        }
+        &-thumb {
+            height: 60px;
+            width: 60px;
+            @include responsive(allPhone) {
+                height: 50px;
+                width: 50px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            @include responsive(vxxs) {
+                margin-top: 10px;
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 28px;
+                color: var(--heading-color);
+                @include responsive(xl) {
+                    font-size: 22px;
+                }
+                @include responsive(lg) {
+                    font-size: 22px;
+                }
+                @include responsive(allPhone) {
+                    font-size: 20px;
+                }
+            }
+            &-subtitle {
+                font-size: 15px;
+                line-height: 22px;
+                color: var(--light-color);
+                margin-top: 7px;
+                display: block;
+                @include responsive(allPhone) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

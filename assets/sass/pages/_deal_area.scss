@@ -1,0 +1,133 @@
+/* Deal area */
+
+.deal-area {}
+
+.deal-wrapper {
+    position: relative;
+    &-thumb {
+        img {
+            &:nth-child(1) {
+                position: absolute;
+                right: 100px;
+                bottom: 0;
+                @include responsive(xxl) {
+                    right: 40px;
+                }
+                @include responsive(xl) {
+                    right: 0px;
+                }
+                @include responsive(lg) {
+                    right: 0px;
+                }
+                @include responsive(allPhone) {
+                    display: none;
+                }
+            }
+            &:nth-child(2) {
+                position: absolute;
+                left: 100px;
+                bottom: 0;
+                @include responsive(xxl) {
+                    left: 40px;
+                }
+                @include responsive(xl) {
+                    left: 0px;
+                }
+                @include responsive(lg) {
+                    left: 0px;
+                }
+                @include responsive(allPhone) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.deal-content {
+    padding: 150px 0 150px 200px;
+    max-width: 600px;
+    @include responsive(xxl) {
+        padding: 150px 0 150px 150px;
+    }
+    @include responsive(xl) {
+        padding: 150px 0 150px 70px;
+    }
+    @include responsive(lg) {
+        padding: 130px 0 130px 50px;
+        max-width: 450px;
+    }
+    @include responsive(allPhone) {
+        padding: 50px 0 50px 30px;
+    }
+    @include responsive(xxs) {
+        padding: 50px 0 50px 20px;
+    }
+    &-title {
+        font-size: 46px;
+        font-weight: 600;
+        color: var(--heading-color);
+        @include responsive(xl) {
+            font-size: 42px;
+            line-height: 48px;
+        }
+        @include responsive(lg) {
+            font-size: 42px;
+            line-height: 48px;
+        }
+        @include responsive(allPhone) {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        @include responsive(xxs) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    &-para {
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--light-color);
+    }
+}
+
+.center-text {
+    .deal-content {
+        margin: auto;
+        padding: 100px 0;
+    }
+    .deal-wrapper-thumb {
+        img {
+            &:nth-child(1) {
+                right: 150px;
+                @include responsive(xxl) {
+                    right: 60px;
+                }
+                @include responsive(xl) {
+                    right: 20px;
+                }
+                @include responsive(lg) {
+                    right: 0px;
+                }
+                @include responsive(allPhone) {
+                    display: none;
+                }
+            }
+            &:nth-child(2) {
+                left: 150px;
+                @include responsive(xxl) {
+                    left: 60px;
+                }
+                @include responsive(xl) {
+                    left: 20px;
+                }
+                @include responsive(lg) {
+                    left: 0px;
+                }
+                @include responsive(allPhone) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/* Isotope List */
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+    @include responsive(allPhone) {
+        gap: 10px;
+    }
+    .list {
+        font-size: 16px;
+        line-height: 26px;
+        cursor: pointer;
+        @include transition(200ms);
+    }
+}
+
+.store-isotope-list {
+    justify-content: center;
+    .list {
+        display: inline-block;
+        font-weight: 500;
+        color: var(--heading-color);
+        @include transition(300ms);
+        position: relative;
+        padding-bottom: 10px;
+        &:hover {
+            color: var(--main-color-one);
+            &::before {
+                width: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background-color: var(--main-color-one);
+            height: 2px;
+            width: 0%;
+            @include transition(300ms);
+            visibility: hidden;
+            opacity: 0;
+        }
+        &.active {
+            color: var(--main-color-one);
+            &::before {
+                width: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

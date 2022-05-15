@@ -1,0 +1,29 @@
+/* Order Tracking area */
+
+.single-page-area {}
+
+.order-track-wrapper {
+    max-width: 600px;
+    margin: auto;
+    @include box-shadow(0, 0, 30px, rgba($steam-color, .3))
+}
+
+.order-track-padding {
+    padding: 50px;
+}
+
+.order-track-contents {
+    &-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .btn-submit {
+        @extend .submit-style;
+        width: 100%;
+        @include transition(300ms);
+        &:hover {
+            background: none;
+            color: var(--main-color-two);
+        }
+    }
+}

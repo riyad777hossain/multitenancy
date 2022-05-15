@@ -1,0 +1,82 @@
+/* Collection area */
+
+.collection-area {}
+
+.collection-wrapper {
+    position: relative;
+    z-index: 1;
+    &-contents {
+        max-width: 500px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        @include responsive(xl) {
+            max-width: 400px;
+            padding: 30px;
+        }
+        @include responsive(lg) {
+            max-width: 380px;
+            padding: 30px;
+        }
+        @include responsive(allPhone) {
+            position: unset;
+            top: 0px;
+            left: 0;
+            @include transform(translate(0%, 0%));
+            @include box-shadow(0, 0, 10px, rgba($steam-color, .2));
+            margin: 30px auto 0;
+        }
+        @include responsive(xxs) {
+            padding: 30px;
+        }
+        @include responsive(xxs) {
+            padding: 20px;
+        }
+        &-subtitle {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+            @include responsive(xs) {
+                font-size: 18px;
+            }
+            @include responsive(vxxs) {
+                font-size: 16px;
+            }
+        }
+        &-title {
+            font-size: 46px;
+            line-height: 55px;
+            color: var(--heading-color);
+            font-weight: 600;
+            margin: -10px 0 0;
+            @include responsive(xl) {
+                font-size: 42px;
+                line-height: 48px;
+            }
+            @include responsive(lg) {
+                font-size: 36px;
+                line-height: 48px;
+            }
+            @include responsive(allPhone) {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            @include responsive(xxs) {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+    }
+    div[class*=col] {
+        &:nth-child(2) {
+            .single-collection-thumb {
+                text-align: right;
+                @include responsive(allPhone) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

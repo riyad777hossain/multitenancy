@@ -1,0 +1,90 @@
+/* Promo area */
+
+.promo-area {}
+
+.single-promo {
+    position: relative;
+    &.promo-padding {
+        padding: 40px;
+    }
+    &-flex {
+        display: flex;
+        align-items: center;
+        gap: 20px 20px;
+    }
+    &-icon {
+        color: var(--main-color-two);
+        font-size: 40px;
+        i {}
+    }
+    &-contents {
+        &-title {
+            font-size: 22px;
+            line-height: 30px;
+            color: var(--heading-color);
+        }
+        &-para {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--extra-light-color);
+        }
+    }
+}
+
+.color-one {
+    .single-promo-icon {
+        color: var(--main-color-one);
+    }
+}
+
+.color-three {
+    .single-promo-icon {
+        color: var(--main-color-three);
+    }
+}
+
+.theme-three {
+    .theme-three-padding {
+        padding-right: 60px;
+        @include responsive(lg) {
+            padding-right: 0;
+        }
+        @include responsive(allPhone) {
+            padding-right: 0;
+        }
+    }
+    .single-promo-icon {
+        color: var(--main-color-four);
+        font-size: 70px;
+        @include responsive(allPhone) {
+            font-size: 60px;
+        }
+        @include responsive(xs) {
+            font-size: 50px;
+        }
+    }
+}
+
+.promo-inner-border {
+    div[class*=col] {
+        &:not(:nth-child(3n+1)) {
+            .single-promo {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -50px;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background-color: $gray;
+                    @include responsive(lg) {
+                        left: -18px;
+                    }
+                    @include responsive(allPhone) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

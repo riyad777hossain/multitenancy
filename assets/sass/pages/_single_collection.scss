@@ -1,0 +1,146 @@
+/* Single Collection Themes */
+
+.collection-padding {
+    padding: 30px 80px;
+    @include responsive(xl) {
+        padding: 30px 40px;
+    }
+    @include responsive(xxl) {
+        padding: 30px 50px;
+    }
+    @include responsive(lg) {
+        padding: 30px 30px;
+    }
+    @include responsive(allPhone) {
+        padding: 30px 40px;
+    }
+    @include responsive(sm) {
+        padding: 30px;
+    }
+    @include responsive(xxs) {
+        padding: 20px;
+    }
+}
+
+.single-collection-two {
+    height: 100%;
+    &-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 24px;
+        @include responsive(xs) {
+            flex-direction: column-reverse;
+        }
+    }
+    &-contents {
+        flex: 1;
+        &-title {
+            font-size: 48px;
+            line-height: 60px;
+            @include responsive(xl) {
+                font-size: 42px;
+                line-height: 48px;
+            }
+            @include responsive(lg) {
+                font-size: 36px;
+                line-height: 45px;
+            }
+            @include responsive(allPhone) {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            @include responsive(xs) {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            @include responsive(vxxs) {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            &-block {
+                display: block;
+            }
+        }
+    }
+    &-thumb {
+        max-width: 320px;
+    }
+}
+
+.theme-three {
+    .collection-padding {
+        @include responsive(xxxl) {
+            padding: 30px 50px;
+        }
+        @include responsive(xxl) {
+            padding: 30px;
+        }
+        @include responsive(xl) {
+            padding: 30px;
+        }
+        @include responsive(lg) {
+            padding: 30px;
+        }
+        @include responsive(allPhone) {
+            padding: 50px 30px;
+        }
+        @include responsive(xxs) {
+            padding: 50px 20px;
+        }
+    }
+    .single-collection-two {
+        &-flex {
+            gap: 10px;
+        }
+        &-thumb {
+            max-width: 450px;
+            @include responsive(xxxl) {
+                max-width: 400px;
+            }
+            @include responsive(xxl) {
+                max-width: 320px;
+            }
+            @include responsive(xl) {
+                max-width: 300px;
+            }
+            @include responsive(lg) {
+                max-width: 280px;
+            }
+        }
+        &-contents {
+            &-title {
+                @include responsive(xxl) {
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+                @include responsive(xl) {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                @include responsive(lg) {
+                    font-size: 36px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+    .single-collection-two-flex {
+        &.flex-row-reverse {
+            @include responsive(xs) {
+                flex-direction: column-reverse !important;
+            }
+        }
+    }
+    .shop-now-btn {
+        &:hover {
+            color: var(--main-color-four);
+            &.shop-now-border {
+                &::before {
+                    width: 100%;
+                    background-color: var(--main-color-four);
+                }
+            }
+        }
+    }
+}

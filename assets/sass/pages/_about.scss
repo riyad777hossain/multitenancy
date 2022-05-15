@@ -1,0 +1,124 @@
+/* About area */
+
+.about-area {}
+
+.about-contents {
+    margin-bottom: 50px;
+    @include responsive(allPhone) {
+        margin-bottom: 0;
+    }
+    &-flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: nowrap;
+        @include responsive(allPhone) {
+            flex-wrap: wrap;
+        }
+    }
+    &-title {
+        font-size: 80px;
+        font-weight: 400;
+        color: var(--heading-color);
+        line-height: 100px;
+        flex-basis: 100%;
+        padding-right: 70px;
+        margin: -18px 0 0;
+        @include responsive(xxl) {
+            font-size: 75px;
+            line-height: 85px;
+            padding-right: 50px;
+            margin: -12px 0 0;
+        }
+        @include responsive(xl) {
+            font-size: 65px;
+            line-height: 75px;
+            padding-right: 50px;
+            margin: -12px 0 0;
+        }
+        @include responsive(lg) {
+            font-size: 55px;
+            line-height: 70px;
+            padding-right: 50px;
+            margin: -12px 0 0;
+        }
+        @include responsive(allPhone) {
+            font-size: 52px;
+            line-height: 70px;
+            margin: 0;
+            padding-right: 0;
+        }
+        @include responsive(sm) {
+            font-size: 42px;
+            line-height: 60px;
+        }
+        @include responsive(xs) {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        @include responsive(xxs) {
+            font-size: 32px;
+            line-height: 42px;
+        }
+        @include responsive(vxxs) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+    &-para {
+        flex-basis: 100%;
+        font-size: 24px;
+        line-height: 42px;
+        color: var(--light-color);
+        margin: -9px 0 0;
+        @include responsive(xxl) {
+            font-size: 22px;
+            line-height: 36px;
+        }
+        @include responsive(xl) {
+            font-size: 20px;
+            line-height: 36px;
+        }
+        @include responsive(lg) {
+            font-size: 18px;
+            line-height: 36px;
+        }
+        @include responsive(allPhone) {
+            font-size: 18px;
+            line-height: 32px;
+            margin: 10px 0 0;
+        }
+        @include responsive(xs) {
+            font-size: 16px;
+            line-height: 28px;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+        @include responsive(vxxs) {
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
+}
+
+.title-shapes {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        background-image: url(../img/about/title-line-shapes.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
+}

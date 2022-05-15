@@ -1,0 +1,41 @@
+:root {
+    --main-color-one: #FF805D;
+    --main-color-one-rgb: 255, 128, 93;
+    --main-color-two: #FF805D;
+    --main-color-two-rgb: 255, 128, 93;
+    --main-color-three: #599A8D;
+    --main-color-three-rgb: 89, 154, 141;
+    --main-color-four: #1E88E5;
+    --main-color-four-rgb: 30, 136, 229;
+    --secondary-color: #F7A3A8;
+    --secondary-color-rgb: 247, 163, 168;
+    --secondary-color-two: #ffdcd2;
+    --secondary-color-two-rgb: 255, 220, 210;
+    --feedback-bg-item: #FFF6EE;
+    --section-bg-1: #FFFBFB;
+    --section-bg-2: #FFF6EE;
+    --section-bg-3: #F4F8FB;
+    --section-bg-4: #F2F3FB;
+    --section-bg-5: #F9F5F2;
+    --section-bg-6: #E5EFF8;
+    --heading-color: #333333;
+    --body-color: #666666;
+    --light-color: #666666;
+    --extra-light-color: #888888;
+    --review-color: #FABE50;
+    --new-color: #5AB27E;
+    --heading-font: "Jost", sans-serif;
+    --body-font: "Jost", sans-serif;
+    --manrope-font: 'Manrope', sans-serif;
+    --roboto-slab-font: 'Roboto Slab', serif;
+    --jost-font: 'Jost', sans-serif;
+}
+
+// base page
+@import "base/global";
+// Section page
+@import "pages/01_banner";
+@import "pages/store_area";
+@import "pages/collection";
+@import "pages/blog_01_theme";
+@import "pages/brand_logo";

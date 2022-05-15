@@ -1,0 +1,76 @@
+/* Countdown Css */
+
+.countdown-para {
+    line-height: 30px;
+}
+
+.global-timer {
+    .syotimer__body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        gap: 24px 50px;
+        @include responsive(xxl) {
+            gap: 24px 20px;
+        }
+        @include responsive(xl) {
+            gap: 24px 20px;
+        }
+        @include responsive(lg) {
+            gap: 24px 20px;
+        }
+        @include responsive(allPhone) {
+            gap: 24px 20px;
+        }
+        .syotimer-cell {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            .syotimer-cell__value {
+                font-size: 36px;
+                color: var(--main-color-two);
+                font-weight: 600;
+                line-height: 42px;
+                font-family: var(--jost-font);
+                @include responsive(allPhone) {
+                    font-size: 18px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 17px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 16px;
+                }
+            }
+            .syotimer-cell__unit {
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 500;
+                line-height: 30px;
+                font-family: var(--jost-font);
+                @include responsive(allPhone) {
+                    font-size: 16px;
+                }
+                @include responsive(vxxs) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.center-text {
+    .global-timer {
+        .syotimer__body {
+            justify-content: center;
+        }
+    }
+}

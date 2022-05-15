@@ -1,0 +1,152 @@
+/* Pricing area */
+
+.pricing-area {}
+
+.pricing-tab-list {}
+
+.price-tab {
+    background-color: $white;
+    padding: 10px;
+    display: inline-flex;
+    box-shadow: 0 0 20px rgba($steam-color, .3);
+    &-list {
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--heading-color);
+        background-color: $white;
+        &.active {
+            background-color: var(--main-color-one);
+            color: $white;
+            border-radius: 5px;
+        }
+        @include responsive(xxs) {
+            font-size: 15px;
+            padding: 7px 20px;
+        }
+        @include responsive(vxxs) {
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+    }
+}
+
+.single-price {
+    &.active {
+        border-color: var(--main-color-one);
+        .single-price-sub-title {
+            background-color: var(--main-color-one);
+            color: $white;
+        }
+        .btn-wrapper {
+            .cmn-btn {
+                background-color: var(--main-color-one);
+                color: $white;
+            }
+        }
+    }
+}
+
+.single-price {
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 0 0 20px rgba($steam-color, .3);
+    border: 1px solid $white;
+    @include transition(300ms);
+    @include responsive(xl) {
+        padding: 20px;
+    }
+    @include responsive(lg) {
+        padding: 20px;
+    }
+    @include responsive(md) {
+        padding: 20px;
+    }
+    @include responsive(xxs) {
+        padding: 20px;
+    }
+    &:hover {
+        border-color: var(--main-color-one);
+        transform: translateY(-5px);
+        background-color: $section-bg-1;
+        .single-price-sub-title {
+            background-color: var(--main-color-one);
+            color: $white;
+        }
+        .btn-wrapper {
+            .cmn-btn {
+                background-color: var(--main-color-one);
+                color: $white;
+            }
+        }
+    }
+    &-sub-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--main-color-one);
+        background-color: rgba(var(--main-color-one-rgb), .1);
+        padding: 3px 20px;
+        display: table;
+        margin-left: auto;
+        @include transition(300ms);
+    }
+    &-top {
+        &-plan {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--heading-color);
+            line-height: 28px;
+        }
+        &-title {
+            font-size: 56px;
+            font-weight: 400;
+            color: var(--heading-color);
+            line-height: 70px;
+            sub {
+                font-size: 20px;
+                line-height: 30px;
+                color: var(--light-color);
+                font-family: var(--heading-font);
+            }
+        }
+    }
+    &-list {
+        max-width: 250px;
+        margin: auto;
+        &-item {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--extra-light-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            strong {
+                color: var(--heading-color);
+            }
+            i {
+                font-size: 20px;
+                @include responsive(xxs) {
+                    font-size: 17px;
+                }
+            }
+            .check-icon {
+                color: var(--main-color-one);
+            }
+        }
+    }
+    .btn-wrapper {
+        .cmn-btn {
+            @include transition(300ms);
+            &:hover {
+                background-color: unset;
+                color: var(--main-color-one);
+            }
+        }
+    }
+}

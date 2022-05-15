@@ -1,0 +1,11 @@
+/* Question area */
+
+.question-area {}
+
+.question-thumb-wrapper {
+    .thumb {
+        img {
+            animation: 5s floating linear infinite;
+        }
+    }
+}

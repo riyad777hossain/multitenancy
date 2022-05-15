@@ -1,0 +1,55 @@
+/* Category Css */
+
+.category-area {}
+
+.category-inner-border {
+    .slick-slide,
+    div[class*=col] {
+        .single-category {
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 2px;
+                top: 0;
+                right: -12px;
+                background-color: rgba($steam-color, .5);
+                @include responsive(allPhone) {
+                    right: -13px;
+                }
+            }
+        }
+    }
+}
+
+.single-category {
+    position: relative;
+    &-thumb {
+        img {
+            margin: auto;
+        }
+    }
+    &-contents {
+        &-title {
+            font-size: 22px;
+        }
+    }
+}
+
+.theme-three {
+    .category-slider {
+        margin: 0 2px;
+        @include responsive(xxl) {
+            margin: 0 5px;
+        }
+        @include responsive(xl) {
+            margin: 0 4px;
+        }
+        @include responsive(lg) {
+            margin: 0 4px;
+        }
+        @include responsive(allPhone) {
+            margin: 0;
+        }
+    }
+}

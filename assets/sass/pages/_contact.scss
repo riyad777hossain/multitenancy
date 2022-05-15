@@ -1,0 +1,230 @@
+/* Contact area */
+
+.contact-area {}
+
+.contact-child {
+    &:nth-child(3n+2),
+    &:nth-child(3n+3) {
+        .single-contact {
+            border-left: 2px solid rgba(var(--main-color-one-rgb), .2);
+            @include responsive(allPhone) {
+                border-left: unset;
+            }
+        }
+    }
+    &:nth-child(3n+4),
+    &:nth-child(3n+5),
+    &:nth-child(3n+6) {
+        .single-contact {
+            border-top: 2px solid rgba(var(--main-color-one-rgb), .2);
+            @include responsive(allPhone) {
+                border-top: unset;
+            }
+        }
+    }
+    @include responsive(allPhone) {
+        &:nth-child(2n+2) {
+            border-left: 2px solid rgba(var(--main-color-one-rgb), .2);
+        }
+        &:nth-child(2n+3),
+        &:nth-child(2n+4) {
+            border-top: 2px solid rgba(var(--main-color-one-rgb), .2);
+        }
+    }
+    @include responsive(xs) {
+        &:nth-child(2n+2) {
+            border-left: unset;
+        }
+        &:nth-child(2n+3),
+        &:nth-child(2n+4) {
+            border-top: unset;
+        }
+        &:not(:last-child) {
+            border-bottom: 2px solid rgba(var(--main-color-one-rgb), .2);
+        }
+    }
+}
+
+.single-contact {
+    padding: 40px;
+    height: 100%;
+    @include transition(300ms);
+    @include responsive(lg) {
+        padding: 30px;
+    }
+    @include responsive(allPhone) {
+        padding: 30px;
+    }
+    @include responsive(sm) {
+        padding: 20px;
+    }
+    @include responsive(xs) {
+        padding: 30px;
+    }
+    @include responsive(vxxs) {
+        padding: 20px;
+    }
+    &:hover {
+        .single-contact-content-icon {
+            background-color: var(--main-color-one);
+            color: $white;
+            img {
+                filter: invert(100%) sepia(32%) saturate(36%) hue-rotate(104deg) brightness(194%) contrast(100%);
+            }
+        }
+    }
+    &-content {
+        &-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            font-size: 60px;
+            background-color: rgba(var(--main-color-one-rgb), .2);
+            margin: auto;
+            @include transition(300ms);
+            @include responsive(allPhone) {
+                height: 70px;
+                width: 70px;
+                font-size: 40px;
+            }
+            img {
+                max-width: 60px;
+                @include transition(300ms);
+                @include responsive(allPhone) {
+                    max-width: 40px;
+                }
+            }
+        }
+        &-details {}
+        &-title {
+            font-size: 36px;
+            line-height: 50px;
+            color: var(--heading-color);
+            font-weight: 400;
+            @include responsive(xl) {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            @include responsive(lg) {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            @include responsive(allPhone) {
+                font-size: 28px;
+                line-height: 32px;
+            }
+            @include responsive(sm) {
+                font-size: 26px;
+            }
+        }
+        &-link {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+            color: var(--extra-light-color);
+            @include transition(300ms);
+            margin-top: 10px;
+            word-break: break-word;
+            @include responsive(xl) {
+                font-size: 18px;
+            }
+            @include responsive(lg) {
+                font-size: 18px;
+            }
+            @include responsive(allPhone) {
+                font-size: 16px;
+            }
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+    }
+}
+
+
+/* Contact Map area */
+
+.contact-map-area {}
+
+.title-bottom-border {
+    position: relative;
+    padding-bottom: 15px;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70px;
+        height: 3px;
+        background-color: var(--main-color-one);
+    }
+}
+
+.contact-map-wrapper {
+    &-flex {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        align-items: stretch;
+        @include responsive(sm) {
+            display: block;
+            flex-wrap: wrap;
+        }
+    }
+    .contact-map {
+        iframe {
+            width: 550px;
+            height: 100%;
+            @include responsive(xl) {
+                width: 480px;
+            }
+            @include responsive(lg) {
+                width: 450px;
+            }
+            @include responsive(allPhone) {
+                width: 310px;
+            }
+            @include responsive(sm) {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    &-contents {
+        flex: 1;
+        padding: 50px;
+        @include responsive(allPhone) {
+            padding: 20px;
+        }
+        @include responsive(sm) {
+            padding: 30px;
+        }
+        @include responsive(vxxs) {
+            padding: 20px;
+        }
+        &-title {
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+            color: var(--heading-color);
+            margin: -10px 0 0;
+            @include responsive(allPhone) {
+                font-size: 28px;
+                line-height: 36px;
+                margin: -5px 0 0;
+            }
+            @include responsive(xxs) {
+                font-size: 26px;
+                line-height: 32px;
+                margin: 0px;
+            }
+            @include responsive(vxxs) {
+                font-size: 24px;
+            }
+        }
+        .input-form {}
+    }
+}

@@ -1,0 +1,51 @@
+/* Arrival Css */
+
+.arrival-left-right-margin {
+    margin: 0 50px;
+    @include responsive(xs) {
+        margin: 0 12px;
+    }
+}
+
+.arrival-area {}
+
+.single-arrival {
+    &-contents {
+        padding-left: 100px;
+        @include responsive(xl) {
+            padding-left: 40px;
+        }
+        @include responsive(lg) {
+            padding-left: 30px;
+        }
+        @include responsive(allPhone) {
+            padding-left: 30px;
+        }
+        @include responsive(xxs) {
+            padding-left: 20px;
+        }
+        @include responsive(vxxs) {
+            padding-left: 10px;
+        }
+        &-title {
+            font-size: 60px;
+            line-height: 70px;
+            @include responsive(allPhone) {
+                font-size: 42px;
+                line-height: 48px;
+            }
+            @include responsive(xs) {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            @include responsive(xxs) {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            &-span {
+                display: block;
+            }
+        }
+        &-para {}
+    }
+}
